@@ -75,6 +75,11 @@ body {
      text-decoration: none;
      color:rgba(255, 255, 255, 0.63);  
  }
+.video {
+    width: 560px;
+    height: 315px;
+    
+ }
  
  .h2noticias {
      color: white;    
@@ -108,13 +113,18 @@ body {
      --fonth3: 'Poppins', sans-serif;
      
  }
- img {
-     width: 100%;
+.img {
+    width: 20vw;
+    height: auto;
  }
  .imageex {
-     width: 300px;
-     height: auto;
+    width: 20vw;
+    height: auto;
  }
+ .imagempersonagem {
+    width: 50px;
+    height: auto;
+}
  .imagehome {
      width: 25em;
      height: auto;
@@ -182,8 +192,8 @@ body {
          border:1px solid rgba(255, 255, 255, 0.37);  
          border-radius: 10px;
          padding: 1em ;
-         max-width: 80vw;
-         min-width: 80vw;
+         max-width: 85vw;
+         min-width: 85vw;
          margin: auto; 
          text-align: center;
      }
@@ -193,9 +203,10 @@ body {
          border:1px solid rgba(255, 255, 255, 0.37);  
          border-radius: 10px;
          padding: 1em;
-         max-width: 80vw;
-         min-width: 80vw;
+         max-width: 85vw;
+         min-width: 85vw;
          margin: auto auto  5px auto;
+         
      }
      .imagehome {
          width: 100%;
@@ -213,6 +224,7 @@ body {
          color: rgba(255, 255, 255, 0.63);
          font-size: 4vw;
          text-align: justify;
+         
      }
      h2 {
          color: white;    
@@ -252,7 +264,7 @@ body {
      .h2noticias {
          color: white;    
          font-family: 'Poppins', sans-serif;
-         font-size: 2em;
+         font-size: 5vw;
          text-align: center;
      }
      .quadradohome {
@@ -267,7 +279,10 @@ body {
      font-size: 3vw;
      text-align: center; 
  }
-
+ .textolado {
+    margin-right: 10px;
+    text-align: justify;
+}
  .quadradohome {
     background-color: rgba(197, 197, 197, 0.034);
     padding: 1em;
@@ -276,29 +291,24 @@ body {
     width: 60vw;
     cursor: pointer;
 }
+.imageex {
+    width: 35vw;
+    height: auto;
+}
+.img {
+   width: 35vw;
+   height: auto;
+    
+}    
+
+.imagempersonagem {
+    width: 15vw;
+    height: auto;
+}
 
  }
   
- .h2classifications {
-     font-size: 1em;
-     color: white;
-     word-spacing: 1em; 
- 
- }
- .imageex {
-     width: 11em;
-     height: auto;
- }
- .img {
-     width: 9em;
-     height: auto;
-     
- }    
- 
- .imagempersonagem {
-     width: 50px;
-     height: auto;
- }
+
  
  @font-face {
      font-family:'titulo';
