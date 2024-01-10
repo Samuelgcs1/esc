@@ -8,26 +8,25 @@
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3096/3096991.png" type="image/x-icon">
 </head>
 <body>
-        <header>  
-            <nav >
-                <h1 id="Home"><a id="Home" href="zerodois.html">ANEWS</a></h1>
-                <div class="menumobile">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
+    <button onclick="topFunction()" class="btn-top" id="btnTop" title="Voltar ao Topo">↑</button>
+    <script src="botaotopo.js"></script>
+            <div class="navbar">
+                <div class="cont">
+                 <a class="home" href="zerodois.html">ANEWS</a>
+                <img id="mobile-cta" class="menubotao" src="menu-svgrepo-com (1).svg" alt="botaodomenu">
+                    <nav>
+                        <img id="mobile-exit" class="botaoclose" src="x-close-delete-svgrepo-com.svg" alt="botaoclose">
+                        <ul class="navlist">                              
+                                    <li><a href="zerodois.html" class="a-header" >Home</a></li>
+                                    <li><a href="recomendados.html" class="a-header" >Recomendations</a></li>
+                                    <li><a href="ultimasNoticias.html"  class="a-header" >Noticias</a></li>
+                                    <li><a href="#" class="a-header">Reviews</a></li>
+                                    <li><a href="#" class="a-header">Curiosidades</a></li>
+                                    <li><a href="#" class="a-header">Tops</a></li>                             
+                        </ul>
+                    </nav>
                 </div>
-                <ul class="navlist">                  
-                        <li>
-                            <a href="zerodois.html" class="acabeca" >Home</a>
-                            <a href="recomendados.html" class="acabeca"  >Recomendations</a>
-                            <a href="ultimasNoticias.html"  class="acabeca" >Noticias</a>
-                            <a href=""class="acabeca"  >Reviews</a>
-                            <a href="" class="acabeca" >Curiosidades</a>
-                            <a href=""class="acabeca" >Tops</a>
-                        </li>
-                </ul>
-            </nav>        
-        </header>
+            </div>   
     <main>
         <h1>Made in Abyss</h1>
         <hr>
@@ -61,12 +60,31 @@
                 <div class="textolado"></div>
                 <p ><b>Reg</b> is a humanoid robot that Riko encounters in the Abyss. He possesses incredible strength, agility, and the ability to unleash powerful beams from his hands. Initially, Reg suffers from amnesia and doesn't remember his past or his true identity.</p>
                 </div>                         
-
             <h2 id="imagens">Imagens</h2>
             <iframe class="video" src="https://www.youtube.com/embed/kqBNQEUI8dM?si=VIgHu6nQ3N31Egv3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen ></iframe>
             <iframe class="video" src="https://www.youtube.com/embed/QMZUKfhLtgE?si=yRRRhKg0DA-yXQH_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen ></iframe>
+            </main>
+            <footer>
+
+                <p id="textofooter">Feito Por: SamuelGCS</p>
+                <p id="textofooter">contato: AnewsSupport@sup.com</p>
+                <p id="textofooter">&copy; copyright reserved</p>
+            </footer>
             <script src="barranavegacao.js"></script>
             <script src="botaotopo.js"></script>
             <button onclick="topFunction()" class="btn-top" id="btnTop" title="Voltar ao Topo">↑</button>
+            <script>
+                const mobileBtn = document.getElementById('mobile-cta');
+               const nav = document.querySelector('nav');
+               const mobileBtnExit = document.getElementById('mobile-exit');
+       
+               mobileBtn.addEventListener('click', () => {
+                   nav.classList.add('menu-btn');
+               });
+       
+               mobileBtnExit.addEventListener('click', () => {
+                   nav.classList.remove('menu-btn');
+               });
+               </script>
 </body>
 </html>
