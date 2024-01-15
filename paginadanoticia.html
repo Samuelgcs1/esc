@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"> 
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3096/3096991.png" type="image/x-icon">
+</head>
+<body>
+    <button onclick="topFunction()" class="btn-top" id="btnTop" title="Voltar ao Topo"></button>
+    <script src="botaotopo.js"></script>
+            <div class="navbar">
+                <div class="cont">
+                    <a class="home" href="index.html">ANEWS</a>
+                    <img id="mobile-cta" class="menubotao" src="menu-svgrepo-com (1).svg" alt="botaodomenu">
+                    <nav>
+                        <img id="mobile-exit" class="botaoclose" src="x-close-delete-svgrepo-com.svg" alt="botaoclose">
+                        <ul class="navlist">                              
+                                    <li><a href="index.html" class="a-header">Home</a></li>
+                                    <li><a href="ultimasNoticias.html"  class="a-header">Noticias</a></li>
+                                    <li><a href="recomendados.html" class="a-header">Recomendações</a></li>
+                                    <li><a href="#" class="a-header">Discussões</a></li>
+                                    <li><a href="#" class="a-header">Login</a></li>                               
+                        </ul>
+                    </nav>
+                </div>
+            </div>     
+        <main>
+            <section>
+                <h1>Após 12 anos, 3ª temporada de Kimi ni Todoke é anunciada</h1>
+                <span>Publicado por: <a href="#"> SamuelGCS</a></span>
+                <p>Sequência do anime romântico chega ao catálogo da Netflix em 2024</p>
+                <p class="data">4 de setembro de 2023 </p>
+                <img src="https://i0.wp.com/nanossaestante.com.br/wp-content/uploads/2022/11/Kimi-ni-Todoke-Netflix-1.jpg?fit=800%2C450&ssl=1" alt="">
+                <p>A esperança dos amantes de animes românticos é a última que morre, <b>pois a 3ª temporada de Kimi ni Todoke (From Me to You, em inglês) foi finalmente anunciada</b>.
+                     A novidade chega 12 anos após os últimos capítulos lançados. <p>
+                         A sequência foi encomendada pela Netflix e tem previsão de lançamento para 2024.
+                         Outra alegria é que <b>Mamiko Noto </b> e <b>Daisuke Namikawa </b> retornarão ao elenco para reprisar os protagonistas Sawako e Shouta Kazehaya, respectivamente.
+                     </p>
+                     <p>
+                         A trama de Kimi ni Todoke acompanha a rotina de Sawako, uma colegial extremamente tímida que tem a vida transformada após conversar com Shouta Kazehaya.
+                         Enquanto os laços com o menino se estreitam, novas amizades e sentimentos florescem para a protagonista.
+                     </p>
+                     <p>
+                         A primeira temporada do anime foi ao ar em 2009, enquanto a segunda estreou em 2011 — o mangá foi finalizado anos depois. A animação teve direção de <b>Hiro Kaburagi</b>.                   
+                         Toda a produção está disponível no catálogo da Netflix.
+                     </p></p>
+                     <p><strong>Fonte:</strong> Netflix</p>
+            </section>
+        </main>
+            <footer>
+                <p id="textofooter">Feito Por: SamuelGCS</p>
+                <p id="textofooter">contato: AnewsSupport@sup.com</p>
+                <p id="textofooter">&copy; copyright reserved</p>
+            </footer>
+        <script>
+         const mobileBtn = document.getElementById('mobile-cta'); 
+        const nav = document.querySelector('nav');
+        const mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        });
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        });
+        </script>
+
+</body>
+</html>
