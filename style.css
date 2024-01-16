@@ -6,7 +6,7 @@ body  {
      font-family: "cabecalho";
      margin: 0; 
      padding: 0;
-     font-weight: bold;
+     box-sizing: border-box;
    
  }
  p {
@@ -29,7 +29,7 @@ body  {
  }
  h2 {
      color: white;    
-     font-family: "cabecalho";;
+     font-family: "cabecalho";
      
  }
  .separation
@@ -101,113 +101,6 @@ li {
     color: rgba(255, 255, 255, 0.705);
     display: inline-block;
 }
-.slider {
-    margin: 0 auto;
-    width: 800px;
-    height: 300px;
-    overflow: hidden;
-    border-radius: 10px;
-   
-}
-.slides {
-    width: 400%;
-    height: 300px;
-    display: flex;
-}
-
-.slides input {
-    display: none;
-}
-
-.slide {
-    width: 25%;
-    position: relative;
-    transition: 2s;
-   
- 
-}
-.slide img {
-    width: 800px ;
-
-    
-}
-.manual-navigation{
-    position: absolute;
-    width: 800px;
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;
-}
-.manual-btn {
-    border: 2px solid #243655;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-
-}
-.manual-btn:not(:last-child) {
-    margin-right: 40px;
-}
-.manual-btn:hover {
-    background-color: white;
-}
-#radio1:checked ~ .first {
-    margin-left: 0;
-}
-#radio2:checked ~ .first {
-    margin-left: -25%;
-}
-#radio3:checked ~ .first {
-    margin-left: -50%;
-}
-#radio4:checked ~ .first {
-    margin-left: -75%;
-}
-.navigation-auto div {
-    border: 2px solid aquamarine;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-.navigation-auto {
-    position: absolute;
-    width: 800px;
-    margin-top: 260px;
-    display: flex;
-    justify-content: center;
-}
-.navigation-auto div:not(:last-child) {
-    margin-right: 40px;
-}
-#radio1:checked ~.navigation-auto .auto-btn1 {
-    background-color: white;
-}
-#radio2:checked ~.navigation-auto .auto-btn2 {
-    background-color: white;
-}
-#radio3:checked ~.navigation-auto .auto-btn3 {
-    background-color: white;
-}
-#radio4:checked ~.navigation-auto .auto-btn4 {
-    background-color: white;
-}
-.text-overlay {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-size: 25px;
-    font-weight: bold;
-    text-shadow: 
-    -1px -1px 0 #000,  
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
-}
 .T-recom {
     width: 90%;
     height: 10%;
@@ -219,7 +112,14 @@ li {
     padding: 5px;
     text-align: center;
 }
-@media screen and (min-width: 1024px) {
+.imagebanner {
+    width: 600px;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (min-width: 768px) {
 
 
 
@@ -293,16 +193,7 @@ li:hover {
      margin: auto;
      object-fit: cover;
  }
- .quadradohome {
-     background-color: rgba(197, 197, 197, 0.158);
-     border-radius: 15px;
-     width: 20vw;
-     height: auto;
-     display: inline-block;
-     cursor: pointer; 
-     margin: auto auto 1rem auto ;
-     padding: 3px;
- }
+
  .quadradonews {
     background-color: rgba(197, 197, 197, 0.158);
     border-radius: 15px;
@@ -321,6 +212,19 @@ li:hover {
     display: flex;
 
  }
+ .banner {
+    color: var(--noticia);
+    font-weight: bold;
+    text-shadow: 
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    font-size: 25px;
+    width: 500px;
+    margin: auto;
+
+}
  .noticia { 
     color: rgb(0, 132, 255);
     font-family: "cabecalho";
@@ -331,6 +235,7 @@ li:hover {
     display: block;
     height: 10%;
     width: 90%;
+    font-weight: bold;
  }
  .info {
     width: 90%;
@@ -397,7 +302,7 @@ section {
    margin: 0;
    padding: 0;
 }
- @media screen and (max-width: 1024px) {
+ @media screen and (max-width: 768px) {
     body {
         background-image: url(body-bg.jpg);
         background-repeat: no-repeat;
@@ -428,6 +333,13 @@ section {
         height: auto;
         margin: auto;
     }
+    .imagebanner {
+        width: 70vw;
+        height: 25vh;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
      .imagehome {
          width: 100%;
@@ -437,16 +349,7 @@ section {
          object-fit: cover;
          padding: auto;
      }
-     .quadradohome {
-        background-color: rgba(197, 197, 197, 0.158);
-        border-radius: 15px;
-        width: 50vw;
-        height: auto;
-        display: block;
-        cursor: pointer; 
-        margin: auto auto 1rem auto ;
-        padding: 3px;
-    }
+  
      .quadradonews {
         background-color: rgba(197, 197, 197, 0.158);
         border-radius: 15px;
@@ -463,37 +366,39 @@ section {
        border-radius: 10px;
        display: flex;
        object-fit: cover;
-       max-width: 100px;
+       
     }
     .noticia { 
        color: rgb(0, 132, 255);
        font-family: "cabecalho";
-       font-size: .5rem;
+       font-size: 2.5vw;
        padding: 5px;
        margin: 5px auto;
        text-align: center;
        display: block;
        height: 25%;
        width: 90%;
-       font-size: .7em;
+       font-weight: bold;
 
    
     }
     .info {
-       width: 90%;
        background-color: #243655;
        display: block;
        border-radius: 10px;
+      
    
     }
     .textochamada {
-        font-size: .5em;
+        font-size: 1.3vw;
         color: rgba(255, 255, 255, 0.705);
         text-align: justify;
         padding: 5px;
-        margin: 5px 0 5px 0;
+        margin: 0;
         font-family: "cabecalho";
         display: inline-block;
+        height: 50%;
+        margin-top: 15px;
     }
     span {
         font-size: .5rem;
@@ -522,7 +427,7 @@ section {
      }
      p {
          color: rgba(255, 255, 255, 0.63);
-         font-size: 4vw;
+         font-size: 3vw;
          text-align: justify;
          padding: 1px;
          font-family: "cabecalho";
@@ -545,7 +450,7 @@ section {
          color: white;
          text-align: center;
          font-family: "cabecalho";
-         font-size: 6vw ;
+         font-size: 4vw ;
      }
      .container {
      display: flex;
@@ -645,9 +550,9 @@ section {
         cursor: pointer;
         float: right;
         border-radius: 50%;
-        height: 3.2em;
+        height: 3em;
         display: flex;
-        margin: 20px 0 0 0;
+        margin: 13px 0 0 0;
     }
     nav.menu-btn {
         display: block;
@@ -701,115 +606,8 @@ section {
         width: 80vw;
         margin: auto ;
     }
-    .slider {
-        margin: 0 auto;
-        width: 80vw ;
-        height: 20vh;
-        min-height: 200px;
-        overflow: hidden;
-        border-radius: 10px;
-    }
-    .slides {
-        width: 400%;
-        height: 300px;
-        display: flex;
-    }
-    
-    .slides input {
-        display: none;
-    }
-    
-    .slide {
-        width: 25%;
-        position: relative;
-        transition: 2s;
-        overflow: hidden;
-    }
-    .slide img {
-        width: 80vw ;
-        min-height: 200px;
-        object-fit: cover;
-    
-    }
-    .manual-navigation{
-        position: absolute;
-        width: 90%;
-        margin-top: -125px;
-        display: flex;
-        justify-content: center;
-    }
-    .manual-btn {
-        border: 2px solid #243655;
-        padding: 5px;
-        border-radius: 10px;
-        cursor: pointer;
-        transition: 1s;
-    
-    }
-    .manual-btn:not(:last-child) {
-        margin-right: 40px;
-    }
-    .manual-btn:hover {
-        background-color: white;
-    }
-    #radio1:checked ~ .first {
-        margin-left: 0;
-    }
-    #radio2:checked ~ .first {
-        margin-left: -25%;
-    }
-    #radio3:checked ~ .first {
-        margin-left: -50%;
-    }
-    #radio4:checked ~ .first {
-        margin-left: -75%;
-    }
-    .navigation-auto div {
-        border: 2px solid aquamarine;
-        padding: 5px;
-        border-radius: 10px;
-        cursor: pointer;
-        transition: 1s;
-    }
-    .navigation-auto {
-        position: absolute;
-        width: 90%;
-        margin-top: 175px;
-        display: flex;
-        justify-content: center;
-    }
-    .navigation-auto div:not(:last-child) {
-        margin-right: 40px;
-    }
-    #radio1:checked ~.navigation-auto .auto-btn1 {
-        background-color: white;
-    }
-    #radio2:checked ~.navigation-auto .auto-btn2 {
-        background-color: white;
-    }
-    #radio3:checked ~.navigation-auto .auto-btn3 {
-        background-color: white;
-    }
-    #radio4:checked ~.navigation-auto .auto-btn4 {
-        background-color: white;
-    }
-    .text-overlay {
-        position: absolute;
-        top: 20%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: rgb(255, 255, 255);
-        text-align: center;
-        font-size: 1em;
-        font-weight: bold;
-        text-shadow: 
-        -1px -1px 0 #000,  
-        1px -1px 0 #000,
-        -1px 1px 0 #000,
-        1px 1px 0 #000;
-    }
     .gtype {
-        font-size: .5em;
+        font-size: 2vw;
         color: rgb(255, 255, 255);
         display: block;
         padding: 1px;
@@ -817,7 +615,7 @@ section {
         margin-left: 5px;
     }
     .type {
-        font-size: .5em;
+        font-size: 1.3vw;
         color: rgba(255, 255, 255, 0.705);
         display: inline-block;
         padding: 0;
@@ -826,16 +624,27 @@ section {
     .T-recom {
         color: rgb(0, 132, 255);
         font-family: "cabecalho";
-        font-size: .5rem;
+        font-size: 55%;
         padding: 5px;
         margin: 5px auto;
         text-align: center;
         display: block;
         height: 6%;
         width: 90%;
-        font-size: .5em;
     }
-
+    .banner {
+        color: var(--noticia);
+        font-weight: bold;
+        text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+        font-size: 2vw;
+        width: 35vw;
+        margin: auto;
+    
+    }
     
 
  }
@@ -857,5 +666,333 @@ section {
     border: none;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        background-image: url(body-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left;
+        font-family: "cabecalho";
+        margin: 0; 
+        background-attachment: fixed;
+        padding: 0;
+     }
+     main {
+         text-align: justify;
+         border:1px solid rgba(255, 255, 255, 0.37);  
+         border-radius: 10px;
+         padding: 1em ;
+         width: 80vw ;
+         margin:  1em auto auto auto; 
+         text-align: center;
+     }
+     navbar {
+        align-items: center;
+        font-family: "cabecalho";
+        padding: 1em;
+    }
+    img {
+        border-radius: 10px;
+        width: 50vw;
+        height: auto;
+        margin: auto;
+    }
+
+     .imagehome {
+         width: 100%;
+        height: auto;
+         border-radius:0px 0px 15px 15px;
+         margin: 0;
+         object-fit: cover;
+         padding: auto;
+     }
+     .quadradohome {
+        background-color: rgba(197, 197, 197, 0.158);
+        border-radius: 15px;
+        width: 50vw;
+        height: auto;
+        display: block;
+        cursor: pointer; 
+        margin: auto auto 1rem auto ;
+        padding: 3px;
+    }
+     .quadradonews {
+        background-color: rgba(197, 197, 197, 0.158);
+        border-radius: 15px;
+        width: 70vw;
+        display: flex;
+        cursor: pointer; 
+        margin: auto auto 1rem auto ;
+        padding: 3px;
+       
+    }
+
+    .imagequadrado {
+       float: left;
+       border-radius: 10px;
+       display: flex;
+       object-fit: cover;
+      
+    }
+    .noticia { 
+       color: rgb(0, 132, 255);
+       font-family: "cabecalho";
+       font-size: 2.5vw;
+       padding: 5px;
+       margin: 5px auto;
+       text-align: center;
+       display: block;
+       height: 25%;
+       width: 90%;
+       font-weight: bold;
+
+   
+    }
+    .info {
+       background-color: #243655;
+       display: block;
+       border-radius: 10px;
+      
+   
+    }
+    .textochamada {
+        font-size: 1.3vw;
+        color: rgba(255, 255, 255, 0.705);
+        text-align: justify;
+        padding: 5px;
+        margin: 0;
+        font-family: "cabecalho";
+        display: inline-block;
+    }
+    span {
+        font-size: .5rem;
+        color: white;
+        left: 0;
+        display: flex;
+     }
+     span > a {
+        color: hsl(202, 100%, 50%);
+        margin: 0;
+        display: flex;
+        margin-left: 5px;
+     }
+     .data {
+        color: hsl(202, 100%, 50%);
+        margin: 0;
+        padding: 5px;
+        text-align: center;
+        font-size: 2.6vw;
+     }
+     .video {
+         width: 100%;
+         height: auto;
+         margin: auto;
+         border-radius: 7px;      
+     }
+     p {
+         color: rgba(255, 255, 255, 0.63);
+         font-size: 3vw;
+         text-align: justify;
+         padding: 1px;
+         font-family: "cabecalho";
+         
+     }
+     h2 {
+         color: white;    
+         font-family: "cabecalho";
+         font-size: 5vw;
+         text-align: justify;
+         
+         
+     }
+     .separation
+     {
+        font-size: 5vw
+     }
+     
+     h1 {
+         color: white;
+         text-align: center;
+         font-family: "cabecalho";
+         font-size: 4vw ;
+     }
+     .container {
+     display: flex;
+     align-items: center;
+     }
+     .h2noticias {
+         color: white;    
+         font-family: "cabecalho";
+         font-size: 5vw;
+         text-align: center;
+     }
+
+
+ .textohome {
+     color: white;
+     font-size: 3vw;
+     text-align: center; 
+     padding: 15px;
+ }
+ 
+
+ .textolado {
+    margin-right: 1px;
+    text-align: justify;
+    padding: 1px;
+}
+.textorecomendado{
+    text-align: justify;
+}
+
+.imageex {
+    width: 35vw;
+    height: auto;
+}
+.img {
+   width: 35vw;
+   height: auto;
+    
+}    
+
+.imagempersonagem {
+    width: 15vw;
+    height: auto;
+}
+    .navlist{
+       margin: 6vh 1vw 1vh 6vw;
+       text-decoration: none;
+       padding: 10px;
+    }
+    nav {
+       display: none;
+   }
+   nav {
+       position: fixed;
+       z-index: 999;
+       width: 50vw;
+       right: 0;
+       top: 0;
+       background: #121f36;
+       border: white;
+       border-radius: 2em;
+       height: 100vh;
+       padding: 1em;
+   }
+   .menubotao {
+    cursor: pointer;
+    float: right;
+    border-radius: 50%;
+    height: 3em;
+    display: flex;
+    margin: 13px 0 0 0;
+   }
+   nav.menu-btn {
+       display: block;
+       
+   }
+   .menubotao{
+       display: block;
+   }
+   .botaoclose {
+       cursor: pointer;
+       padding: 0;
+       margin: 0;
+       float: right;
+       display: block;
+       width: 5vw;      
+   }
+   .cont {
+       display: flex;
+       place-content: space-between;
+       padding: 1em;
+       width: 80vw;
+       margin: auto;
+   }
+
+   .home {
+       color: rgb(255, 255, 255); 
+       font-family: 'titulo';
+       display: flex;
+       font-size: 3em;
+       float: left;
+       margin: 0;
+       
+   }
+   li {
+       color: rgba(255, 255, 255, 0.63);
+       font-family: "cabecalho";
+       text-decoration: none;
+       display: block;
+       
+   }
+   .a-header {
+       font-size: 2.7vw;
+       font-family: "cabecalho";
+       text-decoration: none;
+       display: block;
+       padding: 0;
+       text-align: right;
+       margin: auto;
+   }
+   footer {
+       width: 80vw;
+       margin: auto ;
+   }
+
+   .banner {
+    color: var(--noticia);
+    font-weight: bold;
+    text-shadow: 
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    font-size: 2vw;
+
+}
+   .gtype {
+       font-size: 1vw;
+       color: rgb(255, 255, 255);
+       display: block;
+       padding: 1px;
+     
+       margin-left: 5px;
+   }
+   .type {
+       font-size: 1.3vw;
+       color: rgba(255, 255, 255, 0.705);
+       display: inline-block;
+       padding: 0;
+       font-family: 'cabecalho';
+   }
+   .T-recom {
+       color: rgb(0, 132, 255);
+       font-family: "cabecalho";
+       font-size: 55%;
+       padding: 5px;
+       margin: 5px auto;
+       text-align: center;
+       display: block;
+       height: 6%;
+       width: 90%;
+   }
+
+}
+h5 {
+    color: var(--noticia);
+    font-weight: bold;
+    text-shadow: 
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    font-size: 15px;
+
+}
+.titulos {
+    margin: 1em;
+
+}
 
 

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"> 
     <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3096/3096991.png" type="image/x-icon">
 </head>
@@ -28,62 +29,50 @@
                 </div>
             </div>   
         <main>
-            <h1>Destaques</h1>
-            <div class="slider" >
-
-                <div class="slides">
-                    <input type="radio" name="radio-btn" id="radio1">
-                    <input type="radio" name="radio-btn" id="radio2">
-                    <input type="radio" name="radio-btn" id="radio3">
-                    <input type="radio" name="radio-btn" id="radio4">
-                    <div class="slide first" >
-                        
-                        <a href="paginadanoticia.html"><img src="https://i0.wp.com/nanossaestante.com.br/wp-content/uploads/2022/11/Kimi-ni-Todoke-Netflix-1.jpg?fit=800%2C450&ssl=1" alt=""></a>
-                        <div class="text-overlay">3º Temporada De Kimi ni todoke anunciada para 2024!</div>
-                        
-
-                    </div>
-                    <div class="slide " >
-                        <img src="https://dw9to29mmj727.cloudfront.net/social/3020-SocialShareAssets_Frieren_600x314.jpg" alt="">
-                        <div class="text-overlay">Frieren anuncia Trailer Com Novos Personagens!</div>
-
-                    </div>
-                    <div class="slide " >
-                        <img src="https://www.intoxianime.com/wp-content/uploads/2023/08/kusuriya.jpg" alt="">
-                        <div class="text-overlay">kusuriya no Hitorigoto 2º Cour anunciado para 2024! </div>
-
-                    </div>
-                    <div class="slide " >
-                        <img src="https://images.immediate.co.uk/production/volatile/sites/3/2023/03/Attack-on-Titan-1-5ca69fb.jpg?quality=90&resize=980,654" alt="">
-                        <div class="text-overlay">Attack On Titan Vence Vários Prêmios!</div>
-                    </div>
-                    <div class="navigation-auto"> 
-                        <div class="auto-btn1" ></div>
-                        <div class="auto-btn2" ></div>
-                        <div class="auto-btn3" ></div>
-                        <div class="auto-btn4" ></div>
-                       
-                        
-                    </div>
-
+            <h1 class="titulos">Destaques</h1>
+            <div id="carouselExampleCaptions" class="carousel slide position-relative w-100 p-6 " style="margin: auto;">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img  class="imagebanner" src="https://t.ctcdn.com.br/ZMq_UVZ1ZVRvexL60PSDSISi4oE=/640x360/smart/i843413.jpeg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption  d-md-block">
+                    <h5 class="banner">O Menino e a garça chega aos cinemas Brasileiros em fevereiro</h5>                 
+                  </div>
                 </div>
-
-                <div class="manual-navigation">
-                    <label for="radio1" class="manual-btn"> </label>
-                    <label for="radio2" class="manual-btn"> </label>
-                    <label for="radio3" class="manual-btn"> </label>
-                    <label for="radio4" class="manual-btn"> </label>
-
+                <div class="carousel-item">
+                  <img  class="imagebanner" src="https://criticalhits.com.br/wp-content/uploads/2021/02/Attack-on-Titan-Season-4-Release-Date-Trailer-News-2.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-md-block">
+                    <h5 class="banner">Attack on titan Vence Prêmios inéditos</h5>                
+                  </div>
                 </div>
-
+                <div class="carousel-item">
+                  <img  class="imagebanner" src="https://uploads.jovemnerd.com.br/wp-content/uploads/2023/11/suzume_estreia_crunchyroll__2j2opi-760x428.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption  d-md-block">
+                    <h5 class="banner">Filme Suzume recebe 7 indicações para o Annie Awards</h5>                   
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-            <h1>Notícias Recentes</h1>
+
+            <h1 class="titulos">Notícias Recentes</h1>
             <a href="paginadanoticia.html">
                 <div  class="quadradonews">
                  <img class="imagequadrado" src="https://www.intoxianime.com/wp-content/uploads/2023/09/F5G_7NNaEAAU40E.jpg" alt="noticia1">
                  <div class="info">
                     <p class="noticia">Após 12 anos, 3ª temporada de Kimi ni Todoke é anunciada!</p>
-                    <p class="textochamada">A  3ª temporada de Kimi ni Todoke foi finalmente anunciada.... (Ler Mais)</p>
+                    <p class="textochamada">A esperança dos amantes de animes românticos é a última que morre, pois a 3ª temporada de Kimi ni Todoke foi finalmente anunciada. A novidade chega 12 anos após os últimos capítulos lançados.... (Ler Mais)</p>
                  </div>
                 </div>
             </a>
@@ -103,7 +92,7 @@
                    <p class="textochamada">O site oficial da adaptação em anime de Kusuriya no Hitorigoto liberou um novo trailer para a obra.... (Ler Mais)</p>
                 </div>  
                </div>  
-               <h1>Recomendações Da Temporada</h1>
+               <h1 class="titulos">Recomendações Da Temporada</h1>
 
                <div class="quadradonews">
                 <img class="imagequadrado" src="https://a.storyblok.com/f/178900/1064x1496/5576c30354/solo-leveling-kv-01.jpeg/m/filters:quality(95)format(webp)" alt="noticia1">
@@ -149,19 +138,15 @@
                    <h2 class="gtype"> Estreia: <span class="type"> 06/01 </span> </h2> 
                    <h2 class="gtype"> Episódios: <span class="type"> 12  </span> </h2> 
                    <h2 class="gtype"> Nota: <span class="type"> 8.33 </span> </h2>
-                   <h2 class="gtype"> Sinopse:  <span class="type"> Yuki Itose é uma estudante universitária com deficiência auditiva cujo mundo está envolto em silêncio desde o nascimento. Ela viveu no mesmo lugar durante toda a vida e raramente interage com outras pessoas, exceto com sua melhor amiga, Rin Fujishiro. Certo dia, durante seu trajeto, ela conhece Itsuomi Nagi, de cabelos grisalhos e multilíngue.... (Ler Mais) </span> </h2> 
+                   <h2 class="gtype"> Sinopse:  <span class="type"> Yuki Itose é uma estudante universitária com deficiência auditiva cujo mundo está envolto em silêncio desde o nascimento. Raramente interage com outras pessoas, exceto com sua melhor amiga, Rin Fujishiro. Certo dia, durante seu trajeto, ela conhece Itsuomi Nagi, de cabelos grisalhos e multilíngue.... (Ler Mais) </span> </h2> 
          
 
                  
                 </div>  
                </div>     
+               <h1> Discussões em Alta</h1>
 
-
-
-
-
-
-
+      
 
 
 
@@ -186,5 +171,6 @@
         </script>
         
         <script src="carrossel.js" ></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

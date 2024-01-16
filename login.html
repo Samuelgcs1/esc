@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"> 
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3096/3096991.png" type="image/x-icon">
+</head>
+<body>
+    <button onclick="topFunction()" class="btn-top" id="btnTop" title="Voltar ao Topo"></button>
+    <script src="botaotopo.js"></script>
+   
+            <div class="navbar">
+                <div class="cont">
+                    <a class="home" href="index.html">ANEWS</a>
+                    <img id="mobile-cta" class="menubotao" src="menu-svgrepo-com (1).svg" alt="botaodomenu">
+                    <nav>
+                        <img id="mobile-exit" class="botaoclose" src="x-close-delete-svgrepo-com.svg" alt="botaoclose">
+                        <ul class="navlist">                              
+                                    <li><a href="index.html" class="a-header">Home</a></li>
+                                    <li><a href="ultimasNoticias.html"  class="a-header">Noticias</a></li>
+                                    <li><a href="recomendados.html" class="a-header">Recomendações</a></li>
+                                    <li><a href="#" class="a-header">Discussões</a></li>
+                                    <li><a href="#" class="a-header">Login</a></li>                           
+                        </ul>
+                    </nav>
+                </div>
+            </div>   
+        <main>
+            <form id="login_form">
+                <!-- FORM HEADER -->
+                <div id="form_header">
+                    <h1>Login</h1>
+                    <i id="mode_icon" class="fa-solid fa-moon"></i>
+                </div>
+    
+                <!-- SOCIAL MEDIA LINKS -->
+                <div id="social_media">
+                    <!-- FACEBOOK -->
+                    <a href="#">
+                        <img src="assets/imgs/facebook.png" alt="">
+                    </a>
+    
+                    <!-- GOOGLE -->
+                    <a href="#">
+                        <img src="assets/imgs/google.png" alt="Google logo">
+                    </a>
+    
+                    <!-- GITHUB -->
+                    <a href="#">
+                        <img src="assets/imgs/github.png" alt="">
+                    </a>
+                </div>
+    
+                <!-- INPUTS -->
+                <div id="inputs">
+                    <!-- NAME -->
+                    <div class="input-box">
+                        <label for="name">
+                            Nome
+                            <div class="input-field">
+                                <i class="fa-solid fa-user"></i>
+                                <input type="text" id="name" name="name">
+                            </div>
+                        </label>
+                    </div>
+    
+                    <!-- EMAIL -->
+                    <div class="input-box">
+                        <label for="email">
+                            E-mail
+                            <div class="input-field">
+                                <i class="fa-solid fa-envelope"></i>
+                                <input type="email" id="email" name="email">
+                            </div>
+                        </label>
+                    </div>
+    
+                    <!-- PASSWORD -->
+                    <div class="input-box">
+                        <label for="password">
+                            Senha
+                            <div class="input-field">
+                                <i class="fa-solid fa-key"></i>
+                                <input type="password" id="password" name="password">
+                            </div>
+                        </label>
+    
+                        <!-- FORGOT PASSWORD -->
+                        <div id="forgot_password">
+                            <a href="#">
+                                Esqueci a senha
+                            </a>
+                           
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- LOGIN BUTTON -->
+                <button type="submit" id="login_button">
+                    Login
+                </button>
+            </form>
+
+
+
+
+
+
+
+
+
+
+        </main>
+            <footer>
+                <p id="textofooter">Feito Por: SamuelGCS</p>
+                <p id="textofooter">contato: AnewsSupport@sup.com</p>
+                <p id="textofooter">&copy; copyright reserved</p>
+            </footer>
+        <script>
+         const mobileBtn = document.getElementById('mobile-cta'); 
+        const nav = document.querySelector('nav');
+        const mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        });
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        });
+        </script>
+        <script type="text/javascript" src=""></script>
+        
+    
+</body>
+</html>
