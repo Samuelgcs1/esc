@@ -3,18 +3,33 @@ body  {
      background-repeat: no-repeat;
      background-size: cover;
      background-position: left;
-     font-family: Arial, Helvetica, sans-serif;
+     font-family: "cabecalho";
      margin: 0; 
      padding: 0;
+     box-sizing: border-box;
+   
  }
  p {
      color: rgba(255, 255, 255, 0.63);
      font-size: 26px;  
      text-align: justify;
+     font-family: "cabecalho";
+ }
+ span {
+    font-size: 15px;
+    color: white;
+    left: 0;
+    display: flex;
+ }
+ span > a {
+    color: hsl(202, 100%, 50%);
+    margin: 0;
+    display: flex;
+    margin-left: 5px;
  }
  h2 {
      color: white;    
-     font-family: 'Poppins', sans-serif;
+     font-family: "cabecalho";
      
  }
  .separation
@@ -24,8 +39,7 @@ body  {
  h1 {
      color: white;
      text-align: center;
-     font-family:'Rubik Mono One', monospace;
-     font-family: 'Poppins', sans-serif;
+     font-family: "cabecalho";
      font-size: 34px ;
  }
  .container {
@@ -54,13 +68,14 @@ body  {
 
  h3 {
      color: white;    
-     font-family: 'Poppins', sans-serif;
+     font-family: "cabecalho";
      font-size: 26px;      
  }
  
  a {
      text-decoration: none;
-     color:rgba(255, 255, 255, 0.63);  
+     color:rgba(255, 255, 255, 0.63);
+     cursor: pointer;  
  }
 li > a {
     text-decoration: none;
@@ -73,7 +88,38 @@ li {
     padding: 10px;
     font-size: 26px;
 }
-@media screen and (min-width: 1024px) {
+.gtype {
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    display: flex;
+    padding: 5px;
+    display: inline-block;
+    margin: 0;
+}
+.type {
+    font-size: .8em;
+    color: rgba(255, 255, 255, 0.705);
+    display: inline-block;
+}
+.T-recom {
+    width: 90%;
+    height: 10%;
+    margin: 0;
+    padding: 5px;
+    color: rgb(0, 132, 255);
+    font-family: "cabecalho";
+    font-size: 1em;
+    padding: 5px;
+    text-align: center;
+}
+.imagebanner {
+    width: 600px;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (min-width: 768px) {
 
 
 
@@ -81,6 +127,7 @@ li:hover {
     background-color: rgba(255, 255, 255, 0.288);
     border-radius: 10px;
 }
+
 }
 .video {
     width: 560px;
@@ -91,7 +138,7 @@ li:hover {
  
  .h2noticias {
      color: white;    
-     font-family: 'Poppins', sans-serif;
+     font-family: "cabecalho";
      font-size: 2em;
      text-align: center;
      padding: 10px 1em 1px 1em;
@@ -107,12 +154,12 @@ li:hover {
  
  
  :root {
-     --colortexto: rgba(255, 255, 255, 0.63);
-     --corh1: #243655;
-     --fontexto: Arial, Helvetica, sans-serif;
+     --colortexto: color: #ffffffB4;
+     --corprimaria: #243655;
+     --fontexto: "cabecalho";
      --fonth2: 'Poppins', sans-serif;
      --fonth1: 'Rubik Mono One', monospace;
-     --fonth3: 'Poppins', sans-serif;
+     --noticia: rgb(0, 132, 255);
      
  }
 .img {
@@ -120,6 +167,12 @@ li:hover {
     height: auto;
     margin: 16px;
     border-radius: 10px;
+ }
+ img {
+    border-radius: 10px;
+    width: 800px;
+    height: auto;
+    margin: auto;
  }
  .imageex {
     width: 14em;
@@ -140,16 +193,7 @@ li:hover {
      margin: auto;
      object-fit: cover;
  }
- .quadradohome {
-     background-color: rgba(197, 197, 197, 0.158);
-     border-radius: 15px;
-     width: 70vw;
-     height: auto;
-     display: flex;
-     cursor: pointer; 
-     margin: auto auto 1rem auto ;
-     padding: 3px;
- }
+
  .quadradonews {
     background-color: rgba(197, 197, 197, 0.158);
     border-radius: 15px;
@@ -168,9 +212,22 @@ li:hover {
     display: flex;
 
  }
+ .banner {
+    color: var(--noticia);
+    font-weight: bold;
+    text-shadow: 
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    font-size: 25px;
+    width: 500px;
+    margin: auto;
+
+}
  .noticia { 
     color: rgb(0, 132, 255);
-    font-family: 'Poppins', sans-serif;
+    font-family: "cabecalho";
     font-size: 1em;
     padding: 5px;
     margin: auto;
@@ -178,7 +235,7 @@ li:hover {
     display: block;
     height: 10%;
     width: 90%;
-
+    font-weight: bold;
  }
  .info {
     width: 90%;
@@ -188,17 +245,20 @@ li:hover {
 
  }
  .textochamada {
-    color: rgba(255, 255, 255, 0.63);
+    color: #ffffffb4;
     font-size: 1em;  
     text-align: justify;
     padding: 15px;
+    font-family: "cabecalho";
+    font-weight: bold;
+
  }
  .data {
     color: hsl(202, 100%, 50%);
     margin: 0;
     padding: 5px;
     text-align: center;
-    font-size: 12px;
+    font-size: 24px;
  }
  aside {
     padding: 10px;
@@ -225,6 +285,10 @@ footer {
     width: 1000px;
     margin: auto ;
 }
+section {
+    width: 80%;
+    margin: auto;
+}
 
 
  .botaoclose {
@@ -232,18 +296,19 @@ footer {
 }
 .menubotao {
     display: none;
+    width: 4em;
 }
 .navlist {
    margin: 0;
    padding: 0;
 }
- @media screen and (max-width: 1024px) {
+ @media screen and (max-width: 768px) {
     body {
         background-image: url(body-bg.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: left;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: "cabecalho";
         margin: 0; 
         background-attachment: fixed;
         padding: 0;
@@ -262,6 +327,19 @@ footer {
         font-family: "cabecalho";
         padding: 1em;
     }
+    img {
+        border-radius: 10px;
+        width: 50vw;
+        height: auto;
+        margin: auto;
+    }
+    .imagebanner {
+        width: 70vw;
+        height: 25vh;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
      .imagehome {
          width: 100%;
@@ -271,6 +349,7 @@ footer {
          object-fit: cover;
          padding: auto;
      }
+  
      .quadradonews {
         background-color: rgba(197, 197, 197, 0.158);
         border-radius: 15px;
@@ -287,35 +366,52 @@ footer {
        border-radius: 10px;
        display: flex;
        object-fit: cover;
-       max-width: 100px;
        
-   
     }
     .noticia { 
        color: rgb(0, 132, 255);
-       font-family: 'Poppins', sans-serif;
-       font-size: .5rem;
+       font-family: "cabecalho";
+       font-size: 2.5vw;
        padding: 5px;
-       margin: auto;
+       margin: 5px auto;
        text-align: center;
        display: block;
-       height: 10%;
+       height: 25%;
        width: 90%;
+       font-weight: bold;
+
    
     }
     .info {
-       width: 90%;
        background-color: #243655;
        display: block;
        border-radius: 10px;
+      
    
     }
     .textochamada {
-       color: rgba(255, 255, 255, 0.63);
-       font-size: .5rem;  
-       text-align: justify;
-       padding: 10px;
+        font-size: 1.3vw;
+        color: rgba(255, 255, 255, 0.705);
+        text-align: justify;
+        padding: 5px;
+        margin: 0;
+        font-family: "cabecalho";
+        display: inline-block;
+        height: 50%;
+        margin-top: 15px;
     }
+    span {
+        font-size: .5rem;
+        color: white;
+        left: 0;
+        display: flex;
+     }
+     span > a {
+        color: hsl(202, 100%, 50%);
+        margin: 0;
+        display: flex;
+        margin-left: 5px;
+     }
      .data {
         color: hsl(202, 100%, 50%);
         margin: 0;
@@ -331,14 +427,15 @@ footer {
      }
      p {
          color: rgba(255, 255, 255, 0.63);
-         font-size: 4vw;
+         font-size: 3vw;
          text-align: justify;
          padding: 1px;
+         font-family: "cabecalho";
          
      }
      h2 {
          color: white;    
-         font-family: 'Poppins', sans-serif;
+         font-family: "cabecalho";
          font-size: 5vw;
          text-align: justify;
          
@@ -352,9 +449,8 @@ footer {
      h1 {
          color: white;
          text-align: center;
-         font-family:'Rubik Mono One', monospace;
-         font-family: 'Poppins', sans-serif;
-         font-size: 6vw ;
+         font-family: "cabecalho";
+         font-size: 4vw ;
      }
      .container {
      display: flex;
@@ -362,7 +458,7 @@ footer {
      }
      .h2noticias {
          color: white;    
-         font-family: 'Poppins', sans-serif;
+         font-family: "cabecalho";
          font-size: 5vw;
          text-align: center;
      }
@@ -374,6 +470,7 @@ footer {
      text-align: center; 
      padding: 15px;
  }
+ 
 
  .textolado {
     margin-right: 1px;
@@ -453,9 +550,9 @@ footer {
         cursor: pointer;
         float: right;
         border-radius: 50%;
-        height: 3.2em;
+        height: 3em;
         display: flex;
-        margin: 20px 0 0 0;
+        margin: 13px 0 0 0;
     }
     nav.menu-btn {
         display: block;
@@ -509,6 +606,46 @@ footer {
         width: 80vw;
         margin: auto ;
     }
+    .gtype {
+        font-size: 2vw;
+        color: rgb(255, 255, 255);
+        display: block;
+        padding: 1px;
+      
+        margin-left: 5px;
+    }
+    .type {
+        font-size: 1.3vw;
+        color: rgba(255, 255, 255, 0.705);
+        display: inline-block;
+        padding: 0;
+        font-family: 'cabecalho';
+    }
+    .T-recom {
+        color: rgb(0, 132, 255);
+        font-family: "cabecalho";
+        font-size: 55%;
+        padding: 5px;
+        margin: 5px auto;
+        text-align: center;
+        display: block;
+        height: 6%;
+        width: 90%;
+    }
+    .banner {
+        color: var(--noticia);
+        font-weight: bold;
+        text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+        font-size: 2vw;
+        width: 35vw;
+        margin: auto;
+    
+    }
+    
 
  }
 /* Estilos para o botão flutuante */
@@ -527,5 +664,334 @@ footer {
     width: 60px; 
     height: 60px; 
     border: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        background-image: url(body-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left;
+        font-family: "cabecalho";
+        margin: 0; 
+        background-attachment: fixed;
+        padding: 0;
+     }
+     main {
+         text-align: justify;
+         border:1px solid rgba(255, 255, 255, 0.37);  
+         border-radius: 10px;
+         padding: 1em ;
+         width: 80vw ;
+         margin:  1em auto auto auto; 
+         text-align: center;
+     }
+     navbar {
+        align-items: center;
+        font-family: "cabecalho";
+        padding: 1em;
+    }
+    img {
+        border-radius: 10px;
+        width: 50vw;
+        height: auto;
+        margin: auto;
+    }
+
+     .imagehome {
+         width: 100%;
+        height: auto;
+         border-radius:0px 0px 15px 15px;
+         margin: 0;
+         object-fit: cover;
+         padding: auto;
+     }
+     .quadradohome {
+        background-color: rgba(197, 197, 197, 0.158);
+        border-radius: 15px;
+        width: 50vw;
+        height: auto;
+        display: block;
+        cursor: pointer; 
+        margin: auto auto 1rem auto ;
+        padding: 3px;
+    }
+     .quadradonews {
+        background-color: rgba(197, 197, 197, 0.158);
+        border-radius: 15px;
+        width: 70vw;
+        display: flex;
+        cursor: pointer; 
+        margin: auto auto 1rem auto ;
+        padding: 3px;
+       
+    }
+
+    .imagequadrado {
+       float: left;
+       border-radius: 10px;
+       display: flex;
+       object-fit: cover;
+      
+    }
+    .noticia { 
+       color: rgb(0, 132, 255);
+       font-family: "cabecalho";
+       font-size: 2.5vw;
+       padding: 5px;
+       margin: 5px auto;
+       text-align: center;
+       display: block;
+       height: 25%;
+       width: 90%;
+       font-weight: bold;
+
+   
+    }
+    .info {
+       background-color: #243655;
+       display: block;
+       border-radius: 10px;
+      
+   
+    }
+    .textochamada {
+        font-size: 1.3vw;
+        color: rgba(255, 255, 255, 0.705);
+        text-align: justify;
+        padding: 5px;
+        margin: 0;
+        font-family: "cabecalho";
+        display: inline-block;
+    }
+    span {
+        font-size: .5rem;
+        color: white;
+        left: 0;
+        display: flex;
+     }
+     span > a {
+        color: hsl(202, 100%, 50%);
+        margin: 0;
+        display: flex;
+        margin-left: 5px;
+     }
+     .data {
+        color: hsl(202, 100%, 50%);
+        margin: 0;
+        padding: 5px;
+        text-align: center;
+        font-size: 2.6vw;
+     }
+     .video {
+         width: 100%;
+         height: auto;
+         margin: auto;
+         border-radius: 7px;      
+     }
+     p {
+         color: rgba(255, 255, 255, 0.63);
+         font-size: 3vw;
+         text-align: justify;
+         padding: 1px;
+         font-family: "cabecalho";
+         
+     }
+     h2 {
+         color: white;    
+         font-family: "cabecalho";
+         font-size: 5vw;
+         text-align: justify;
+         
+         
+     }
+     .separation
+     {
+        font-size: 5vw
+     }
+     
+     h1 {
+         color: white;
+         text-align: center;
+         font-family: "cabecalho";
+         font-size: 4vw ;
+     }
+     .container {
+     display: flex;
+     align-items: center;
+     }
+     .h2noticias {
+         color: white;    
+         font-family: "cabecalho";
+         font-size: 5vw;
+         text-align: center;
+     }
+
+
+ .textohome {
+     color: white;
+     font-size: 3vw;
+     text-align: center; 
+     padding: 15px;
+ }
+ 
+
+ .textolado {
+    margin-right: 1px;
+    text-align: justify;
+    padding: 1px;
+}
+.textorecomendado{
+    text-align: justify;
+}
+
+.imageex {
+    width: 35vw;
+    height: auto;
+}
+.img {
+   width: 35vw;
+   height: auto;
+    
+}    
+
+.imagempersonagem {
+    width: 15vw;
+    height: auto;
+}
+    .navlist{
+       margin: 6vh 1vw 1vh 6vw;
+       text-decoration: none;
+       padding: 10px;
+    }
+    nav {
+       display: none;
+   }
+   nav {
+       position: fixed;
+       z-index: 999;
+       width: 50vw;
+       right: 0;
+       top: 0;
+       background: #121f36;
+       border: white;
+       border-radius: 2em;
+       height: 100vh;
+       padding: 1em;
+   }
+   .menubotao {
+    cursor: pointer;
+    float: right;
+    border-radius: 50%;
+    height: 3em;
+    display: flex;
+    margin: 13px 0 0 0;
+   }
+   nav.menu-btn {
+       display: block;
+       
+   }
+   .menubotao{
+       display: block;
+   }
+   .botaoclose {
+       cursor: pointer;
+       padding: 0;
+       margin: 0;
+       float: right;
+       display: block;
+       width: 5vw;      
+   }
+   .cont {
+       display: flex;
+       place-content: space-between;
+       padding: 1em;
+       width: 80vw;
+       margin: auto;
+   }
+
+   .home {
+       color: rgb(255, 255, 255); 
+       font-family: 'titulo';
+       display: flex;
+       font-size: 3em;
+       float: left;
+       margin: 0;
+       
+   }
+   li {
+       color: rgba(255, 255, 255, 0.63);
+       font-family: "cabecalho";
+       text-decoration: none;
+       display: block;
+       
+   }
+   .a-header {
+       font-size: 2.7vw;
+       font-family: "cabecalho";
+       text-decoration: none;
+       display: block;
+       padding: 0;
+       text-align: right;
+       margin: auto;
+   }
+   footer {
+       width: 80vw;
+       margin: auto ;
+   }
+
+   .banner {
+    color: var(--noticia);
+    font-weight: bold;
+    text-shadow: 
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    font-size: 2vw;
+
+}
+   .gtype {
+       font-size: 1vw;
+       color: rgb(255, 255, 255);
+       display: block;
+       padding: 1px;
+     
+       margin-left: 5px;
+   }
+   .type {
+       font-size: 1.3vw;
+       color: rgba(255, 255, 255, 0.705);
+       display: inline-block;
+       padding: 0;
+       font-family: 'cabecalho';
+   }
+   .T-recom {
+       color: rgb(0, 132, 255);
+       font-family: "cabecalho";
+       font-size: 55%;
+       padding: 5px;
+       margin: 5px auto;
+       text-align: center;
+       display: block;
+       height: 6%;
+       width: 90%;
+   }
+
+}
+h5 {
+    color: var(--noticia);
+    font-weight: bold;
+    text-shadow: 
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    font-size: 15px;
+
+}
+.titulos {
+    margin: 1em;
+
 }
 
