@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3096/3096991.png" type="image/x-icon">
+</head>
+<body>
+    <button onclick="topFunction()" class="btn-top" id="btnTop" title="Voltar ao Topo"></button>
+    <script src="botaotopo.js"></script>
+            <div class="navbar">
+                <div class="cont">
+                    <a class="home" href="index.html"> <img  class="logo" src="abanner-removebg-preview.png" alt=""></a> 
+                <img id="mobile-cta" class="menubotao" src="menu-svgrepo-com (1).svg" alt="botaodomenu">
+                <nav class="nav1">
+                        <img id="mobile-exit" class="botaoclose" src="x-close-delete-svgrepo-com.svg" alt="botaoclose">
+                        <ul class="navlist">                              
+                                    <li><a href="index.html" class="a-header" >Home</a></li>
+                                    <li><a href="ultimasNoticias.html"  class="a-header" >Noticias</a></li>
+                                    <li><a href="recomendados.html" class="a-header">Recomendações</a></li>
+                                    <li><a href="#" class="a-header">Discussões</a></li>
+                                    <li><a href="#" class="a-header">Login</a></li>                               
+                        </ul>
+                    </nav>
+                </div>
+            </div>   
+    <main>
+        <h1>Black Lagoon</h1>
+        <hr>
+        <div class="container">            
+            <a href="blacklagoon.html"><img class="img" src="Black_Lagoon.jpg" alt="Black lagoon"></a>
+            <div class="textolado">
+                <ol>
+                    <h2 class="genero"> Genêro: <span class="type"> Ação , seinen </span> </h2>
+                    <h2 class="genero"> Estúdio: <span class="type"> Madhouse </span> </h2>
+                    <h2 class="genero"> Estreia: <span class="type"> 09/04/2006 </span> </h2>
+                    <h2 class="genero"> Episódios: <span class="type"> 12  </span> </h2>
+                    <h2 class="genero"> Nota: <span class="type"> 8.03</span> </h2>
+                    <h2 class="genero"> Fonte: <span class="type"> Mangá</span> </h2>
+                    <h2 class="genero"> Duração: <span class="type"> 23 minutos por ep.</span> </h2>                   
+                    <h2 class="genero"> MyAnimeList: <span class="type"> <a href="https://myanimelist.net/anime/889/Black_Lagoon">Clique Aqui</a></span> </h2>
+                    
+                   
+                </ol>
+            </div>         
+        </div>
+         <h2 class="separation">Sinopse</h2>
+         <p>O assalariado Rokurou Okajima passa seus dias tentando subir na hierarquia corporativa de sua empresa, até que um dia uma negociação comercial na Tailândia dá errado. Durante o acordo fracassado, ele se torna refém da Lagoon Company – um bando de mercenários piratas implacáveis. Deixado aos caprichos de seus captores depois que seus gerentes se recusaram a pagar seu resgate, Rokurou faz o impensável: em vez de implorar por sua vida, ele se junta à mesma tripulação que o sequestrou.</p>
+
+            <p>Agora membro do grupo, Rokurou deve se adaptar à sua nova residência na dissoluta paisagem infernal conhecida como Roanapur, uma cidade onde a corrupção e o crime correm desenfreados, e até mesmo o menor deslize pode custar-lhe a vida. Se não fosse por um dos muitos sindicatos do crime da ilha, Rokurou também se encontraria constantemente em conflito com seu impetuoso e pistoleiro colega, Revy.</p>
+           
+            <p>Enquanto Rokurou luta para abandonar seu passado - e com mais do que apenas os lucros do comércio ilegal da Lagoon Company em jogo - ele deve rapidamente encontrar a determinação para tomar decisões difíceis em situações de alto estresse, mantendo sua humanidade intacta </p>
+            <h2 class="separation">Video</h2>
+            <div class="wrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/_DPcdtmBsgQ?si=0Ofo5gpr9V4KTQ0C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>               
+    </main>
+    
+    <footer>
+        <p id="textofooter">Feito Por: SamuelGCS</p>
+        <p id="textofooter">contato: AnewsSupport@sup.com</p>
+        <p id="textofooter">&copy; copyright reserved</p>
+    </footer>
+    <script src="barranavegacao.js"></script>
+    <button onclick="topFunction()" class="btn-top" id="btnTop" title="Voltar ao Topo">↑</button>
+    <script src="botaotopo.js"></script>
+    <script>
+        const mobileBtn = document.getElementById('mobile-cta');
+       const nav = document.querySelector('nav');
+       const mobileBtnExit = document.getElementById('mobile-exit');
+
+       mobileBtn.addEventListener('click', () => {
+           nav.classList.add('menu-btn');
+       });
+
+       mobileBtnExit.addEventListener('click', () => {
+           nav.classList.remove('menu-btn');
+       });
+       </script>
+</body>
+</html>
