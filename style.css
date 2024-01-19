@@ -2,7 +2,7 @@ body  {
     background-image: url(body-bg.jpg);
      background-repeat: no-repeat;
      background-size: cover;
-     background-position: left;
+     background-position: center;
      font-family: "cabecalho";
      margin: 0; 
      padding: 0;
@@ -109,7 +109,7 @@ li {
 .T-recom {
     width: 90%;
     height: 15%;
-    margin: 0;
+    margin: 5px auto;
     padding: 5px;
     color: var(--noticia);
     font-family: "cabecalho";
@@ -123,8 +123,7 @@ li {
     1px 1px 0 #000;
 }
 .imagebanner {
-    width: 600px;
-    height: 300px;
+    width: 80%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -145,6 +144,15 @@ li:hover {
     border-radius: 10px;
     
  }
+ .titulos {
+    margin: 1em;
+    color: white;
+    text-align: center;
+    font-family: "cabecalho";
+    font-size: 3.5rem ;
+ 
+
+}
  
  .h2noticias {
      color: white;    
@@ -204,11 +212,22 @@ li:hover {
 
  .imagequadradoRe {
     float: left;
-    border-radius: 10px;
+    border-radius: 5px;
     display: flex;
     object-fit: cover;
-    width: 30%;
+    width: 13%;
+ 
  }
+ .imagequadradohome {
+    float: left;
+    border-radius: 3px;
+    display: flex;
+    object-fit: cover;
+    width: 20%;
+
+
+ }
+ 
 
  .quadradonews {
     background-color: rgba(197, 197, 197, 0.158);
@@ -223,8 +242,8 @@ li:hover {
  }
  .imagequadrado {
     float: left;
-     width: 30%;
-    border-radius: 10px;
+     width: 20%;
+    border-radius: 5px;
     display: flex;
 
  }
@@ -234,11 +253,11 @@ li:hover {
     text-shadow: 
     -1px -1px 0 #000,  
     1px -1px 0 #000,
-    -1px 1px 0 #000,
+    -1px 1px 0 #000
     1px 1px 0 #000;
     font-size: 25px;
     width: 500px;
-    margin: auto;
+    margin:  15px auto;
 
 }
 .genero {
@@ -269,12 +288,12 @@ li:hover {
  .noticiaRe { 
     color: var(--noticia);
     font-family: "cabecalho";
-    font-size: 34px;
+    font-size: 16px;
     padding: 5px;
     margin: 5px auto;
     text-align: center;
     display: block;
-    height: 60%;
+    height: 30%;
     width: 90%;
     font-weight: bold;
     text-shadow: 
@@ -287,7 +306,7 @@ li:hover {
  }
  .fonte {
     font-size: 1em;
-    color: white;
+    color: rgba(255, 255, 255, 0.603);
     margin: 0;
     padding: 0;
     text-align: center;
@@ -301,11 +320,15 @@ li:hover {
     border-radius: 10px;
 
  }
+ .star {
+    width: 1em;
+}
+
  .textochamada {
     color: #ffffffb4;
     font-size: 1em;  
     text-align: justify;
-    padding: 15px;
+    padding: 5px;
     font-family: "cabecalho";
     font-weight: bold;
 
@@ -375,8 +398,7 @@ section {
          text-align: justify;
          border:1px solid rgba(255, 255, 255, 0.37);  
          border-radius: 10px;
-         padding: 1em ;
-         width: 80vw ;
+         width: 80%;
          margin:  1em auto auto auto; 
          text-align: center;
      }
@@ -392,7 +414,7 @@ section {
         margin: auto;
     }
     .imagebanner {
-        width: 90%;
+        width: 100%;
         height: 50%;
         display: block;
         margin-left: auto;
@@ -409,7 +431,7 @@ section {
   
      .quadradonews {
         background-color: rgba(197, 197, 197, 0.158);
-        border-radius: 15px;
+        border-radius: 5px;
         width: 100%;
         display: flex;
         cursor: pointer; 
@@ -426,27 +448,37 @@ section {
 
     .imagequadrado {
        float: left;
-       border-radius: 10px;
+       border-radius: 3px;
        display: flex;
        object-fit: cover;
-       width: 35%;
+       width: 25%;
     }
     .imagequadradoRe {
         float: left;
-        border-radius: 10px;
+        border-radius: 3px;
         display: flex;
         object-fit: cover;
-        width: 38%;
+        width: 20%;
+ 
+    
+     }
+     .imagequadradohome {
+        float: left;
+        border-radius: 3px;
+        display: flex;
+        object-fit: cover;
+        width: 40%;
+ 
+    
      }
     .noticia { 
        color: var(--noticia);
        font-family: "cabecalho";
-       font-size: 2.5vw;
-       padding: 5px;
+       font-size: 2.5vw;   
        margin: 5px auto;
        text-align: center;
        display: block;
-       height: 30%;
+       height: 25%;
        width: 90%;
        font-weight: bold;
        text-shadow: 
@@ -458,12 +490,12 @@ section {
     .noticiaRe { 
         color: var(--noticia);
         font-family: "cabecalho";
-        font-size: 3.5vw;
+        font-size: 2vw;
         padding: 5px;
-        margin: 5px auto;
+        margin: 1px auto;
         text-align: center;
         display: block;
-        height: 60%;
+        height: 50%;
         width: 90%;
         font-weight: bold;
         text-shadow: 
@@ -476,7 +508,7 @@ section {
      }
      .fonte {
         font-size: .5rem;
-        color: white;
+        color: rgba(255, 255, 255, 0.63);
         margin: 0;
         padding: 0;
         text-align: center;
@@ -500,7 +532,7 @@ section {
     .info {
        background-color: #243655;
        display: block;
-       border-radius: 10px;
+       border-radius: 5px;
       
    
     }
@@ -538,7 +570,7 @@ section {
         margin: 0;
         padding: 0px;
         text-align: center;
-        font-size: 2.6vw;
+        font-size: .5rem;
         
      }
      .video {
@@ -574,6 +606,9 @@ section {
          font-family: "cabecalho";
          font-size: 4vw ;
      }
+     .star {
+        width: 1.5vw;
+    }
     
      }
  
@@ -736,9 +771,9 @@ section {
     .T-recom {
         color: var(--noticia);
         font-family: "cabecalho";
-        font-size: 55%;
+        font-size: .5rem;
         padding: 5px;
-        margin: 5px auto;
+        margin:  0 auto 5px auto;
         text-align: center;
         display: block;
         height: 6%;
@@ -758,15 +793,23 @@ section {
         -1px 1px 0 #000,
         1px 1px 0 #000;
         font-size: 3vw;
-        width: 35vw;
-        margin: auto;
+        width: 80%;
+       
     
     }
     .page-item {
         display: inline-block;
         font-size: 3vw;
     }
+    .titulos {
+        margin: 1em;
+        color: white;
+        text-align: center;
+        font-family: "cabecalho";
+        font-size: 1rem ;
+     
     
+    }
 
  }
 /* Estilos para o botão flutuante */
@@ -798,10 +841,7 @@ h5 {
     font-size: 15px;
 
 }
-.titulos {
-    margin: 1em;
 
-}
 .wrapper {
     position: relative;
     overflow: hidden;
@@ -816,7 +856,6 @@ h5 {
     height: 100%;
     border-radius: 10px;
 }
-
 
 
 
