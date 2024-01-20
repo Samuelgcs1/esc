@@ -273,7 +273,7 @@ li:hover {
     margin-left: 5px;
 }
  .noticia { 
-    color: var(--noticia);
+    color: white;
     font-family: "cabecalho";
     font-size: 1em;
     padding: 5px;
@@ -495,7 +495,7 @@ section {
     
      }
     .noticia { 
-       color: var(--noticia);
+       color: white;
        font-family: "cabecalho";
        font-size: 2.5vw;   
        margin: 5px auto;
@@ -506,7 +506,7 @@ section {
        font-weight: bold;
     }
     .noticiaRe { 
-        color: var(--noticia);
+        color: white;
         font-family: "cabecalho";
         font-size: 2vw;
         padding: 5px;
@@ -891,7 +891,7 @@ section {
     }
     .titulos {
         margin: 1em;
-        color: white;
+        color: var(--noticia);
         text-align: center;
         font-family: "cabecalho";
         font-size: 1rem ;
