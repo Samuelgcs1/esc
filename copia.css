@@ -624,8 +624,8 @@ section {
     }
     .imagebanner {
 
-        width:  60%;
-        height: auto;
+        width:  130px;
+        height: 190px;
         display: block;
         transform: rotate(15deg);
         display: flex;
@@ -651,9 +651,9 @@ section {
     .banner {
         color: white;
         font-weight: bold;   
-        font-size: 10px;
+        font-size: 6px;
         width: 50%;
-        margin:  2em auto;
+        margin:  4em auto;
         position: absolute;
         margin-left: 10px;
     
@@ -663,7 +663,7 @@ section {
         font-weight: bold;
         font-size: 5px;
         width: 50%;
-        margin:  11em auto;
+        margin:  9em auto;
         margin-left: 1em;
         
         position: absolute;
@@ -674,7 +674,7 @@ section {
         font-size: 5px;
         width: 20%;
         margin:  15em auto;
-        margin-left: 1px;
+        margin-left: -50px;
         position: absolute;
        
         text-align: center;
@@ -689,6 +689,18 @@ section {
         
         border-radius: 10px;
     }
+    .CategoriaBanner{
+        color: deepskyblue;
+        font-weight: bold;
+        font-size: 5px;
+        width: 50%;
+        margin:  5px auto;
+        position: absolute;
+        margin-left: 1em;
+        margin-top: 1em;
+        padding: 5px;
+    
+     }
      }
  
 
@@ -910,11 +922,6 @@ section {
 h5 {
     color: var(--noticia);
     font-weight: bold;
-    text-shadow: 
-    -1px -1px 0 #000,  
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
     font-size: 15px;
 
 }
