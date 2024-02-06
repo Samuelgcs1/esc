@@ -33,7 +33,7 @@ body  {
  span > a {
     color: var(--noticia);
     margin: 0;
-    display: flex;
+    display: inline-block;
  }
  h2 {
      color: white;    
@@ -42,7 +42,7 @@ body  {
  }
  .separation
  {
-    font-size: 3rem 
+    font-size: 3.5rem 
  }
  h1 {
      color: white;
@@ -86,6 +86,7 @@ body  {
      text-decoration: none;
      color:rgba(255, 255, 255, 0.63);
      cursor: pointer;  
+     
  }
 li > a {
     text-decoration: none;
@@ -186,7 +187,7 @@ li:hover {
      
  }
 .img {
-    max-width: 75%;
+    max-width: 214px;
     max-height: 25%;
     margin: 0;
     border-radius: 20px;
@@ -671,6 +672,94 @@ ul.Posts li.Post{
 news {
     width: 80%;
 }
+.container-capitulos{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 1.5rem auto;
+
+}
+.capitulos-list{
+ list-style: none;
+ display: flex;
+ flex-direction: column;
+ overflow: auto;
+ height: 400px;
+}
+.capitulo {
+ color: white;
+ margin: auto;
+ font-size: 2.5rem;
+ cursor: pointer;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: var(--corprimaria);
+   cursor: pointer;
+}
+::-webkit-scrollbar-thumb {
+    width: 10px;
+    background-color: rgba(255, 255, 255, 0.445);
+  cursor: pointer;
+}
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #243655;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    border-radius: 5px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    width: 30px; 
+    margin-left: 2rem;
+}
+.capitulos-popup{
+    text-align: center;
+
+}
+
+#searchInput {
+    width: 100%; 
+    padding: 10px; 
+    margin: 0 auto; 
+    display: block; 
+    font-size: 16px; 
+    border-radius: 5px; 
+    border: 1px solid rgba(255, 255, 255, 0.137); 
+    background-color: #243655;
+    color: white;
+}
+#searchInput::placeholder {
+    color: #99999967; 
+    font-style: italic; 
+    font-size: 14px; 
+   
+}
+#searchInput:focus {
+    outline: none; 
+}
 @media screen and (max-width: 768px) {
     .navlist{
         margin: 6vh 1vw 1vh 6vw;
@@ -759,6 +848,7 @@ news {
         display: block;
         padding: 1px;
         margin-left: 5px;
+      
     }
     .type {
         font-size: .5rem;
@@ -766,6 +856,7 @@ news {
         display: inline-block;
         padding: 0;
         font-family: 'cabecalho';
+        
     }
     .typer {
         font-size: 1rem;
@@ -839,7 +930,7 @@ news {
     }
    
     .img {
-        max-width: 100%;
+        max-width: 160px;
         max-height: 100%;
         margin: 0;
         border-radius: 20px;
@@ -987,7 +1078,7 @@ news {
      span > a {
         color:var(--noticia);
         margin: 0;
-        display: flex;
+        display: inline-block;
      }
      .data {
         color: var(--noticia);
@@ -1140,6 +1231,46 @@ news {
      .imgLastNews {
         width:15%;
     }
+    .container-capitulos{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 1.5rem auto;
+    
+    }
+    .capitulos-list{
+     list-style: none;
+     display: flex;
+     flex-direction: column;
+     overflow: auto;
+     height: 400px;
+    }
+    .capitulo {
+     color: white;
+     margin: auto;
+     font-size: 1.5rem;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+      
+       
+    }
+    ::-webkit-scrollbar-thumb {
+     display: none;
+      
+    }
+    #searchInput {
+        width: 100%; 
+        padding: 10px; 
+        margin: 0 auto; 
+        display: block; 
+        font-size: 16px; 
+        border-radius: 5px; 
+        border: 1px solid rgba(255, 255, 255, 0.137); 
+        background-color: #243655;
+        color: white;
+    }
+    
    
     }
 .page-link{
@@ -1195,4 +1326,9 @@ a:hover {
     padding: var(--bs-pagination-padding-y) var(--bs-pagination-padding-x);
     text-decoration: none;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+
+.image-Manga {
+    width: 100%;
 }
