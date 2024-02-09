@@ -1,422 +1,362 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, minimum-scale=1"
-    />
-    <title>Home</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="shortcut icon"
-      href="https://cdn-icons-png.flaticon.com/512/3096/3096991.png"
-      type="image/x-icon"
-    />
-  </head>
-  <body>
-    <button
-      onclick="topFunction()"
-      class="btn-top"
-      id="btnTop"
-      title="Voltar ao Topo"
-    ></button>
-    <script src="botaotopo.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1"
+  />
+  <title>Home</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="shortcut icon"
+    href="https://cdn-icons-png.flaticon.com/512/3096/3096991.png"
+    type="image/x-icon"
+  />
+</head>
+<body>
+  <button
+    onclick="topFunction()"
+    class="btn-top"
+    id="btnTop"
+    title="Voltar ao Topo"
+  ></button>
+  <script src="botaotopo.js"></script>
 
-    <div class="navbar">
-      <div class="cont">
-        <a class="home" href="index.html">
-          <img class="logo" src="abanner-removebg-preview.png" alt=""
-        /></a>
+  <div class="navbar">
+    <div class="cont">
+      <a class="home" href="index.html">
+        <img class="logo" src="abanner-removebg-preview.png" alt=""
+      /></a>
+      <img
+        id="mobile-cta"
+        class="menubotao"
+        src="menu-svgrepo-com (1).svg"
+        alt="botaodomenu"
+      />
+      <nav class="nav1">
         <img
-          id="mobile-cta"
-          class="menubotao"
-          src="menu-svgrepo-com (1).svg"
-          alt="botaodomenu"
+          id="mobile-exit"
+          class="botaoclose"
+          src="x-close-delete-svgrepo-com.svg"
+          alt="botaoclose"
         />
-        <nav class="nav1">
+        <ul class="navlist">
+          <li><a href="index.html" class="a-header">Home</a></li>
+          <li>
+            <a href="ultimasNoticias.html" class="a-header">Noticias</a>
+          </li>
+          <li><a href="recomendados.html" class="a-header">Mangás</a></li>
+          <li><a href="#" class="a-header">Comunidade</a></li>
+          <li><a href="login.php" class="a-header">Login</a></li>
+          <li><a href="logout.php" class="a-header">Sair</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <main>
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide position-relative w-100 p-6"
+      style="margin: auto"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <p class="CategoriaBanner">Publicar</p>
+          <a href="#">
+            <h5 class="banner">
+              Publique Seu Mangá De Forma Gratuita e Fácil
+            </h5>
+          </a>
+          <a href="#">
+            <p class="textobanner">
+              Publique e Divulge seu mangá de forma gratuita e....
+            </p>
+          </a>
+          <a class="lermais href=">Ler Mais</a>
+          <div class="quadradobanner">
+            <img
+              class="imagebanner"
+              src="https://i.pinimg.com/564x/fb/b8/94/fbb894b8df8bed08d6bee1a932b8f48f.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-caption d-md-block"></div>
+        </div>
+        <div class="carousel-item">
+          <p class="CategoriaBanner">Aprender</p>
+          <a href="#">
+            <h5 class="banner">Aprenda Como Desenhar Mangá Gratuitamente</h5>
+          </a>
+          <a href="#">
+            <p class="textobanner">
+              Quer Desenhar Mangá e n sabe como? Nós Ensinamos!
+            </p>
+          </a>
+
+          <a class="lermais href=">Ler Mais</a>
+
+          <div class="quadradobanner">
+            <img
+              class="imagebanner"
+              src="https://i.pinimg.com/564x/28/6a/5e/286a5e7d0dad847d74004e3d33d8d6f3.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-caption d-md-block"></div>
+        </div>
+        <div class="carousel-item">
+          <p class="CategoriaBanner">Aprender</p>
+          <a href="#">
+            <h5 class="banner">Como Escrever Uma História De Mangá</h5>
+          </a>
+          <a href="#">
+            <p class="textobanner">
+              Saiba Todos os Fundamentos e Pontos Importantes de Como escrever
+              Uma História....
+            </p>
+          </a>
+          <a class="lermais href=">Ler Mais</a>
+          <div class="quadradobanner">
+            <img
+              class="imagebanner"
+              src="https://i.pinimg.com/564x/cb/06/0a/cb060af81211484956a476b02caf80c6.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-caption d-md-block"></div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <h1 class="titulos">Notícias Destaques</h1>
+    <hr>
+    <div class="containerNews">
+      <div class="quadradonews">
+        <div class="imgnewshome">
           <img
-            id="mobile-exit"
-            class="botaoclose"
-            src="x-close-delete-svgrepo-com.svg"
-            alt="botaoclose"
+            class="imagequadradoRe"
+            src="https://www.intoxianime.com/wp-content/uploads/2024/02/wisto-980x450.jpg"
+            alt=""
           />
-          <ul class="navlist">
-            <li><a href="index.html" class="a-header">Home</a></li>
-            <li>
-              <a href="ultimasNoticias.html" class="a-header">Noticias</a>
-            </li>
-            <li><a href="recomendados.html" class="a-header">Mangás</a></li>
-            <li><a href="#" class="a-header">Comunidade</a></li>
-            <li><a href="#" class="a-header">Login</a></li>
-          </ul>
-        </nav>
+        </div>
+        <div class="info">
+          <p class="noticiaRe">WISTORIA – Mangá do autor de Dungeon ni Deai tem anuncio de anime</p>
+          <p class="data-home">17/01/24</p>
+          <p class="fonte">Ler Mais</p>
+          
+        </div>
+      </div>
+      <hr>
+      <div class="quadradonews">
+        <div class="imgnewshome">
+          <img
+            class="imagequadradoRe"
+            src="https://www.intoxianime.com/wp-content/uploads/2023/12/Spy-2-980x450.jpg"
+            alt=""
+          />
+        </div>
+        <div class="info">
+          <p class="noticiaRe">
+            Spy x Family – Filme ganha data de estreia nos cinemas brasileiros
+          </p>
+          <p class="data-home">17/01/24</p>
+          <p class="fonte">Ler Mais</p>
+        </div>
+      </div>
+      <hr>
+      <div class="quadradonews">
+        <div class="imgnewshome">
+          <img
+            class="imagequadradoRe"
+            src="https://www.intoxianime.com/wp-content/uploads/2023/05/jujutsu-520x245.jpg"
+            alt=""
+          />
+        </div>
+        <div class="info">
+          <p class="noticiaRe">
+            Jujutsu Kaisen ganha prêmio como série com maior demanda de publico mundialmente
+          </p>
+
+          <p class="data-home">15/12/23</p>
+          <p class="fonte">Ler Mais</p>
+        </div>
+      </div>
+      <hr>
+      <div class="quadradonews">
+        <div class="imgnewshome">
+          <img
+            class="imagequadradoRe"
+            src="https://www.intoxianime.com/wp-content/uploads/2024/02/konosu-520x245.jpg"
+            alt=""
+          />
+        </div>
+        <div class="info">
+          <p class="noticiaRe">KonoSuba – 3º temporada ganha novo visual</p>
+
+          <p class="data-home">17/01/24</p>
+          <p class="fonte">Ler Mais</p>
+        </div>
+      </div>
+      <hr>
+      <div class="quadradonews">
+        <div class="imgnewshome">
+          <img
+            class="imagequadradoRe"
+            src="https://www.intoxianime.com/wp-content/uploads/2022/05/Haikyuu_To_the_Top_Part2_PI_Cover-520x245.jpg"
+            alt=""
+          />
+        </div>
+        <div class="info">
+          <p class="noticiaRe">
+            Haikyuu – Mangá ganhará One Shot no próximo mês
+          </p>
+
+          <p class="data-home">17/01/24</p>
+          <p class="fonte">Ler Mais</p>
+        </div>
+      </div>
+      <hr>
+      <div class="quadradonews">
+        <div class="imgnewshome">
+          <img
+            class="imagequadradoRe"
+            src="https://www.intoxianime.com/wp-content/uploads/2024/01/hero.jpg"
+            alt=""
+          />
+        </div>
+        <div class="info">
+          <p class="noticiaRe">
+            Boku no Hero Academia – Filme ganha trailer e data de estreia
+          </p>
+
+          <p class="data-home">17/01/24</p>
+          <p class="fonte">Ler Mais</p>
+        </div>
       </div>
     </div>
-    <main>
-      <h1 class="titulos">Destaques</h1>
-      <div
-        id="carouselExampleCaptions"
-        class="carousel slide position-relative w-100 p-6"
-        style="margin: auto"
-      >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <p class="CategoriaBanner">Publicar</p>
-            <a href="#">
-              <h5 class="banner">
-                Publique Seu Mangá De Forma Gratuita e Fácil
-              </h5>
-            </a>
-            <a href="#">
-              <p class="textobanner">
-                Publique e Divulge seu mangá de forma gratuita e....
-              </p>
-            </a>
-            <a class="lermais href=">Ler Mais</a>
-            <div class="quadradobanner">
-              <img
-                class="imagebanner"
-                src="https://i.pinimg.com/564x/fb/b8/94/fbb894b8df8bed08d6bee1a932b8f48f.jpg"
-                class="d-block w-100"
-                alt="..."
-              />
-            </div>
-            <div class="carousel-caption d-md-block"></div>
-          </div>
-          <div class="carousel-item">
-            <p class="CategoriaBanner">Aprender</p>
-            <a href="#">
-              <h5 class="banner">Aprenda Como Desenhar Mangá Gratuitamente</h5>
-            </a>
-            <a href="#">
-              <p class="textobanner">
-                Quer Desenhar Mangá e n sabe como? Nós Ensinamos!
-              </p>
-            </a>
+    <h1 class="titulos">Mangás Recomendados</h1>
+    <hr>
+    <div class="container">            
+      <a href="sololeveling.html"><img class="img" src="https://m.media-amazon.com/images/I/71tnjmKWwJL._AC_UF894,1000_QL80_.jpg" alt="Black lagoon"></a>
+      <div class="textolado">
+          <ol>
+              <h2 class="genero"> Genêro: <span class="typer"> Ação , Aventura , Fantasia</span> </h2>
+              <h2 class="genero"> Serialização: <span class="typer"> KakaoPage </span> </h2>
+              <h2 class="genero"> Autores: <span class="typer">  Chugong (história), Jang Sung-rak (arte)</span> </h2>
+              <h2 class="genero"> Estreia: <span class="typer"> 04/03/2018 </span> </h2>
+              <h2 class="genero"> status: <span class="typer"> 201 capítulos (Finalizado)  </span> </h2>
+              <h2 class="genero"> Nota: <span class="typer"> <img class="starr" src="star-svgrepo-com.svg" alt=""> <img class="starr" src="star-svgrepo-com.svg" alt=""> <img class="starr" src="star-svgrepo-com.svg" alt=""> <img class="starr" src="star-svgrepo-com.svg" alt=""> <img class="starr" src="star-svgrepo-com.svg" alt="">  </span> <span class="typer"> 5,0 </span>   </h2>
+          </ol>
+      </div>       
+  </div>
+</div>
+<hr>
+<div class="container">            
+  <a href="blacklagoon.html"><img class="img" src="https://cdn.myanimelist.net/images/manga/1/227037.jpg" alt="Black lagoon"></a>
+  <div class="textolado">
+      <ol>
+          <h2 class="genero"> Genêro: <span class="typer">  Elenco Adulto , Militar , Crime Organizado</span> </h2>
+          <h2 class="genero"> Serialização: <span class="typer"> Sunday Gene-X </span> </h2>
+          <h2 class="genero"> Autores: <span class="typer">   Hiroe, Rei (história e arte) </span> </h2>
+          <h2 class="genero"> Estreia: <span class="typer"> 19/04/2002 </span> </h2>
+          <h2 class="genero"> status: <span class="typer"> Em Lançamento  </span> </h2>
+          <h2 class="genero"> Nota: <span class="typer"> <img class="starr" src="star-svgrepo-com.svg" alt=""> <img class="starr" src="star-svgrepo-com.svg" alt=""> <img class="starr" src="star-svgrepo-com.svg" alt=""> <img class="starr" src="star-svgrepo-com.svg" alt=""> <img class="starr" src="star-svgrepo-com.svg" alt="">  </span> <span class="typer"> 5,0 </span> </h2>
+      </ol>
+  </div>       
+</div>
+</div>
+<hr>
+<div class="container">            
+  <a href="Chihayafuru.html"><img class="img" src="https://cdn.myanimelist.net/images/manga/1/245072.jpg" alt="Black lagoon"></a>
+  <div class="textolado">
+      <ol>
+          <h2 class="genero"> Genêro: <span class="typer"> Premiado , Drama</span> </h2>
+          <h2 class="genero"> Serialização: <span class="typer"> Be-Love </span> </h2>
+          <h2 class="genero"> Autores: <span class="typer">   Suetsugu, Yuki (história e arte)</span> </h2>
+          <h2 class="genero"> Estreia: <span class="typer"> 28/12/2007 </span> </h2>
+          <h2 class="genero"> status: <span class="typer"> 252 capítulos (Finalizado)  </span> </h2>
+          <h2 class="genero"> Nota: <span class="typer"> <img class="starr" src="star-svgrepo-com.svg" alt=""> <img class="starr" src="star-svgrepo-com.svg" alt=""> <img class="starr" src="star-svgrepo-com.svg" alt=""> <img class="starr" src="star-svgrepo-com.svg" alt=""> <img class="starr" src="star-svgrepo-com.svg" alt="">  </span> <span class="typer"> 5,0 </span></h2>
+      </ol>
+  </div>       
+</div>
+</div>
+<hr>
 
-            <a class="lermais href=">Ler Mais</a>
+    <h1>Discussões em Alta</h1>
+  </main>
+  <footer>
+    <p id="textofooter">Feito Por: SamuelGCS</p>
+    <p id="textofooter">contato: AnewsSupport@sup.com</p>
+    <p id="textofooter">&copy; copyright reserved</p>
+  </footer>
+  <script>
+    const mobileBtn = document.getElementById("mobile-cta");
+    const nav = document.querySelector("nav");
+    const mobileBtnExit = document.getElementById("mobile-exit");
 
-            <div class="quadradobanner">
-              <img
-                class="imagebanner"
-                src="https://i.pinimg.com/564x/28/6a/5e/286a5e7d0dad847d74004e3d33d8d6f3.jpg"
-                class="d-block w-100"
-                alt="..."
-              />
-            </div>
-            <div class="carousel-caption d-md-block"></div>
-          </div>
-          <div class="carousel-item">
-            <p class="CategoriaBanner">Aprender</p>
-            <a href="#">
-              <h5 class="banner">Como Escrever Uma História De Mangá</h5>
-            </a>
-            <a href="#">
-              <p class="textobanner">
-                Saiba Todos os Fundamentos e Pontos Importantes de Como escrever
-                Uma História....
-              </p>
-            </a>
-            <a class="lermais href=">Ler Mais</a>
-            <div class="quadradobanner">
-              <img
-                class="imagebanner"
-                src="https://i.pinimg.com/564x/cb/06/0a/cb060af81211484956a476b02caf80c6.jpg"
-                class="d-block w-100"
-                alt="..."
-              />
-            </div>
-            <div class="carousel-caption d-md-block"></div>
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      <h1 class="titulos">Notícias Recentes</h1>
+    mobileBtn.addEventListener("click", () => {
+      nav.classList.add("menu-btn");
+    });
 
-      <div class="containerNews">
-        <div class="quadradonews">
-          <div class="imgnewshome">
-            <img
-              class="imagequadradoRe"
-              src="https://www.intoxianime.com/wp-content/uploads/2023/09/F5G_7NNaEAAU40E.jpg"
-              alt=""
-            />
-          </div>
-          <div class="info">
-            <p class="noticiaRe">3ª temporada de Kimi ni Todoke é anunciada!</p>
-            <p class="data-home">17/01/24</p>
-            <p class="fonte">Ler Mais</p>
-          </div>
-        </div>
-        <div class="quadradonews">
-          <div class="imgnewshome">
-            <img
-              class="imagequadradoRe"
-              src="https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/f446d7a2a155c6120742978fb528fb82.jpe"
-              alt=""
-            />
-          </div>
-          <div class="info">
-            <p class="noticiaRe">
-              Novos trailers de Frieren revela personagens novos
-            </p>
-            <p class="data-home">17/01/24</p>
-            <p class="fonte">Ler Mais</p>
-          </div>
-        </div>
-        <div class="quadradonews">
-          <div class="imgnewshome">
-            <img
-              class="imagequadradoRe"
-              src="https://www.anroll.net/_next/image?url=https%3A%2F%2Fstatic.anroll.net%2Fimages%2Fanimes%2Fcapas%2Fkusuriya-no-hitorigoto.jpg&w=384&q=50"
-              alt=""
-            />
-          </div>
-          <div class="info">
-            <p class="noticiaRe">
-              Kusuriya no Hitorigoto 2º parte é anunciada para 2024
-            </p>
+    mobileBtnExit.addEventListener("click", () => {
+      nav.classList.remove("menu-btn");
+    });
+  </script>
 
-            <p class="data-home">15/12/23</p>
-            <p class="fonte">Ler Mais</p>
-          </div>
-        </div>
-        <div class="quadradonews">
-          <div class="imgnewshome">
-            <img
-              class="imagequadradoRe"
-              src="https://pbs.twimg.com/media/GEFpWcEWcAAoRJ0?format=jpg&name=small"
-              alt=""
-            />
-          </div>
-          <div class="info">
-            <p class="noticiaRe">
-              omniscient reader's pode ter adaptação em anime!
-            </p>
-
-            <p class="data-home">17/01/24</p>
-            <p class="fonte">Ler Mais</p>
-          </div>
-        </div>
-        <div class="quadradonews">
-          <div class="imgnewshome">
-            <img
-              class="imagequadradoRe"
-              src="https://pbs.twimg.com/media/GEENHJoWcAAFJhi?format=jpg&name=small"
-              alt=""
-            />
-          </div>
-          <div class="info">
-            <p class="noticiaRe">
-              lycoris recoil está com um filme em andamento!
-            </p>
-
-            <p class="data-home">17/01/24</p>
-            <p class="fonte">Ler Mais</p>
-          </div>
-        </div>
-        <div class="quadradonews">
-          <div class="imgnewshome">
-            <img
-              class="imagequadradoRe"
-              src="https://pbs.twimg.com/media/GEHluXxWYAMPL8l?format=jpg&name=small"
-              alt=""
-            />
-          </div>
-          <div class="info">
-            <p class="noticiaRe">
-              Filme Parte 2 de 'Given' Tem Estreia Anunciada
-            </p>
-
-            <p class="data-home">17/01/24</p>
-            <p class="fonte">Ler Mais</p>
-          </div>
-        </div>
-      </div>
-      <h1 class="titulos">Mangás Recomendados</h1>
-      <div class="containerRecomendations">
-        <div class="quadradorecomendations">
-          <div class="imgreco">
-            <a href="sololeveling.html"><img class="imagequadradohome"src="https://m.media-amazon.com/images/I/81OYRZEQG7L._AC_UF1000,1000_QL80_.jpg" alt=""/></a>
-          </div>
-          <div class="info">
-            <p class="T-recom">Solo Leveling</p>
-            <h2 class="gtype">
-              Genêro: <span class="type"> Ação, Aventura </span>
-            </h2>
-            <h2 class="gtype">
-              Estúdio: <span class="type"> A1-Pictures </span>
-            </h2>
-            <h2 class="gtype">Estreia: <span class="type"> 06/01 </span></h2>
-            <h2 class="gtype">Episódios: <span class="type"> 12 </span></h2>
-            <h2 class="gtype">
-              Nota:
-              <span class="type">
-                <img src="star-svgrepo-com.svgs" alt="" />
-                <img class="star" src="star-svgrepo-com.svg" alt="" />
-                <img class="star" src="star-svgrepo-com.svg" alt="" />
-                <img class="star" src="star-svgrepo-com.svg" alt="" />
-                <img class="star" src="star-svgrepo-com.svg" alt=""
-              /></span>
-              <span class="type"> 4,0 </span>
-            </h2>
-
-            <h2 class="gtype">
-              Sinopse:
-              <span class="type">
-                Dez anos atrás, “o Portão” apareceu e conectou o mundo real com
-                o reino da magia e dos monstros. Sung Jin-Woo.... <a href="sololeveling.html">(Ler Mais)</a>
-                
-              </span>
-            </h2>
-          </div>
-        </div>
-        <div class="quadradorecomendations">
-          <div class="imgreco">
-            <img
-              class="imagequadradohome"
-              src="https://uploads.jovemnerd.com.br/wp-content/uploads/2023/05/fw_o61naqaiih54__5cty33429-760x1069.jpeg"
-              alt=""
-            />
-          </div>
-          <div class="info">
-            <p class="T-recom">Dungeon Meshi</p>
-            <h2 class="gtype">
-              Genêro: <span class="type"> Aventura, Comédia </span>
-            </h2>
-            <h2 class="gtype">Estúdio: <span class="type"> Trigger </span></h2>
-            <h2 class="gtype">Estreia: <span class="type"> 04/01 </span></h2>
-            <h2 class="gtype">Episódios: <span class="type"> 24 </span></h2>
-            <h2 class="gtype">
-              Nota:
-              <span class="type">
-                <img class="star" src="star-svgrepo-com.svg" alt="" />
-                <img class="star" src="star-svgrepo-com.svg" alt="" />
-                <img class="star" src="star-svgrepo-com.svg" alt="" />
-                <img class="star" src="star-svgrepo-com.svg" alt=""
-              /></span>
-              <span class="type"> 4,0 </span>
-            </h2>
-            <h2 class="gtype">
-              Sinopse:
-              <span class="type">
-                Depois que o Reino Dourado é afundado no subsolo por um mágico
-                insano, seu rei emerge, prometendo todo o seu tesouro a quem
-                derrotar o.... (Ler Mais)
-              </span>
-            </h2>
-          </div>
-        </div>
-        <div class="quadradorecomendations">
-          <div class="imgreco">
-            <img
-              class="imagequadradohome"
-              src="https://www.intoxianime.com/wp-content/uploads/2023/11/136954l.jpg"
-              alt="noticia1"
-            />
-          </div>
-          <div class="info">
-            <p class="T-recom">Yubisaki to Renren</p>
-            <h2 class="gtype">
-              Genêro: <span class="type"> Romance, Drama </span>
-            </h2>
-            <h2 class="gtype">Estúdio: <span class="type"> Ajia-do </span></h2>
-            <h2 class="gtype">Estreia: <span class="type"> 06/01 </span></h2>
-            <h2 class="gtype">Episódios: <span class="type"> 12 </span></h2>
-            <h2 class="gtype">
-              Nota:
-              <span class="type">
-                <img class="star" src="star-svgrepo-com.svg" alt="" />
-                <img class="star" src="star-svgrepo-com.svg" alt="" />
-                <img class="star" src="star-svgrepo-com.svg" alt="" />
-                <img class="star" src="star-svgrepo-com.svg" alt="" />
-                <img class="star" src="half-star-svgrepo-com.svg" alt=""
-              /></span>
-              <span class="type"> 4,5 </span>
-            </h2>
-            <h2 class="gtype">
-              Sinopse:
-              <span class="type">
-                Yuki Itose é uma estudante universitária com deficiência
-                auditiva cujo mundo.... (Ler Mais)
-              </span>
-            </h2>
-          </div>
-        </div>
-      </div>
-
-      <h1>Discussões em Alta</h1>
-    </main>
-    <footer>
-      <p id="textofooter">Feito Por: SamuelGCS</p>
-      <p id="textofooter">contato: AnewsSupport@sup.com</p>
-      <p id="textofooter">&copy; copyright reserved</p>
-    </footer>
-    <script>
-      const mobileBtn = document.getElementById("mobile-cta");
-      const nav = document.querySelector("nav");
-      const mobileBtnExit = document.getElementById("mobile-exit");
-
-      mobileBtn.addEventListener("click", () => {
-        nav.classList.add("menu-btn");
-      });
-
-      mobileBtnExit.addEventListener("click", () => {
-        nav.classList.remove("menu-btn");
-      });
-    </script>
-
-    <script src="carrossel.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <script src="carrossel.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+</body>
 </html>

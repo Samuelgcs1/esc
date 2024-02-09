@@ -62,11 +62,11 @@
                 <form action="process_login.php" method="POST">
                     <div class="form-group">
                         <label for="username">Email:</label>
-                        <input type="text" id="username" name="username" required placeholder="Digite Seu Email"> 
+                        <input type="text" id="username" name="email" required placeholder="Digite Seu Email"> 
                     </div>
                     <div class="form-group">
                         <label for="password">Senha:</label>
-                        <input type="password" id="password" name="password" required placeholder="Digite Sua Senha">
+                        <input type="password" id="password" name="senha" required placeholder="Digite Sua Senha">
                     </div>
                     <div class="form-group">
                         <input type="submit" value="Login">
