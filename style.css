@@ -183,7 +183,8 @@
     --fontexto: "cabecalho";
     --fonth2: 'Poppins', sans-serif;
     --fonth1: 'Rubik Mono One', monospace;
-    --noticia: #ffca18;
+    --CorSecundaria: #ffca18;
+    --CorBordaInput: rgba(255, 255, 255, 0.137);  
 
     }
     .img {
@@ -799,6 +800,122 @@
         margin-bottom: 2rem;
     
     }
+    .login-container {
+        background-color: #121f36;
+        padding: 0px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 500px;
+        margin: auto;
+        padding: 1rem;
+        border: rgba(255, 255, 255, 0.603) solid 1px;
+       
+    }
+    .login-container h2 {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    .form-group input[type="text"],
+    .form-group input[type="password"] {
+        width: 90%; 
+        padding: 10px; 
+        margin: 0 auto; 
+        display: block; 
+        font-size: 16px; 
+        border-radius: 5px; 
+        border: 1px solid rgba(255, 255, 255, 0.137); 
+        background-color: #243655;
+        color: white;
+        outline: none;
+    }
+    .form-group input[type="submit"] {
+        width: 433px;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        background-color: #ffc918a8;
+        color: #fff;
+        cursor: pointer;
+        margin-left: 22.9px;
+    }
+    .form-group input[type="submit"]:hover {
+        background-color: var(--noticia);
+    }
+    .google-login-btn {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        text-align: center;
+    }
+    label {
+        color: white;
+        font-size: 2rem;
+       
+    }
+    ::placeholder {
+        color: #99999967; 
+        font-style: italic; 
+        font-size: 14px; 
+    }
+    .abcRioButton {
+     margin-left: 22.5px;
+     border-radius: 5px;
+    }
+    .login-icon {
+        width: 50px;
+        margin: 2rem auto;
+        text-align: center;
+        display: block;
+    }
+    .bookmark-text {
+        font-size: 1rem;
+        margin-top: 4px;
+        text-align: center;
+        display: block;
+      }
+      .favorite-icon {
+        width: 2.5rem; 
+        cursor: pointer;
+        border-radius: 0px;
+        justify-content: center;
+        text-align: center;
+        
+      }
+      .favoritar {
+        display: block;
+        justify-content: center;
+        text-align: center;
+      }
+      .OrdemLista {
+        background-color: #243655;
+        border-radius: 5px;
+        margin: 2rem auto;
+        color: white;
+        font-style: italic;
+        border: 1px solid rgba(255, 255, 255, 0.137); 
+        width: 10rem;
+        height: 5rem;
+        
+
+
+    }
+    .OrdenarLista {
+        display: flex;
+        justify-content: center;
+    }
+    
   
     @media screen and (max-width: 768px) {
     .navlist{
@@ -1332,6 +1449,110 @@
             margin-bottom: 2rem;
         
         }
+        .login-container {
+            background-color: #121f36;
+            padding: 0px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            margin: auto;
+            padding: 1rem;
+            border: rgba(255, 255, 255, 0.603) solid 1px;
+           
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="password"] {
+            width: 90%; 
+            padding: 10px; 
+            margin: 0 auto; 
+            display: block; 
+            font-size: 16px; 
+            border-radius: 5px; 
+            border: 1px solid rgba(255, 255, 255, 0.137); 
+            background-color: #243655;
+            color: white;
+            outline: none;
+        }
+        .form-group input[type="submit"] {
+            width: 90%;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ffc918a8;
+            color: #fff;
+            cursor: pointer;
+          margin: auto;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: var(--noticia);
+        }
+        .google-login-btn {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+            text-align: center;
+        }
+        label {
+            color: white;
+            font-size: 2rem;
+           
+        }
+        ::placeholder {
+            color: #99999967; 
+            font-style: italic; 
+            font-size: 14px; 
+        }
+        .abcRioButton {
+         margin: auto;
+         border-radius: 5px;
+        }
+        .login-icon {
+            width: 50px;
+            margin: 2rem auto;
+            text-align: center;
+            display: block;
+        }
+          .bookmark-text {
+            font-size: 1rem;
+            margin-top: 4px;
+            text-align: center;
+            display: block;
+          }
+          .favorite-icon {
+            width: 1.5rem; 
+            height: 1.5rem; 
+            cursor: pointer;
+            border-radius: 0px;
+          }
+        .OrdemLista {
+            background-color: #243655;
+            border-radius: 5px;
+            margin: 2rem auto;
+            color: white;
+            font-style: italic;
+            border: 1px solid rgba(255, 255, 255, 0.137); 
+            width: 50%;
+            height: 3rem;
+
+
+
+        }
 
     }
     .page-link{
@@ -1393,3 +1614,15 @@
     .image-Manga {
     width: 100%;
     }
+.perfil {
+    background-color: #121f36;
+    padding: 0px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    margin: auto;
+    padding: 1rem;
+    border: rgba(255, 255, 255, 0.603) solid 1px;
+ 
+}
+

@@ -64,9 +64,10 @@
       <h1>Solo Leveling</h1>
       <hr />
       <div class="container">
-          ><img
-            class="img"
-            src="https://m.media-amazon.com/images/I/81OYRZEQG7L._AC_UF1000,1000_QL80_.jpg"/>
+        ><img
+          class="img"
+          src="https://m.media-amazon.com/images/I/81OYRZEQG7L._AC_UF1000,1000_QL80_.jpg"
+        />
         <div class="textolado">
           <ol>
             <h2 class="genero">
@@ -102,6 +103,28 @@
           </ol>
         </div>
       </div>
+      <hr />
+
+      <div class="favoritar">
+        <img
+          src="bookmark-vazio.svg"
+          alt="Bookmark Empty"
+          class="favorite-icon"
+          id="bookmark-empty"
+          onclick="toggleBookmark()"
+        />
+        <img
+          src="bookmark-full.svg"
+          alt="Bookmark Filled"
+          class="favorite-icon"
+          id="bookmark-filled"
+          style="display: none"
+          onclick="toggleBookmark()"
+        />
+        <h2 class="bookmark-text">Favoritar</h2>
+      </div>
+
+      <hr />
       <h2 class="separation">Sinopse</h2>
       <p>
         Dez anos atrás, “o Portão” apareceu e conectou o mundo real com o reino
@@ -115,12 +138,17 @@
       </p>
 
       <h2 class="separation">Capítulos</h2>
-      <hr>
-      <input type="text" id="searchInput" placeholder="Pesquisar Capítulo...">
+      <hr/>
+      <button class="OrdemLista" onclick="trocarOrdem()">Trocar Ordem </button>
+      <input type="text" id="searchInput" placeholder="Pesquisar Capítulo..." />
       <div class="container-capitulos">
         <ul class="capitulos-list" id="capitulos-list">
-          <li class="capitulo"><a href="pg00sololeveling.html">capitulo 0</a></li>
-          <li class="capitulo"><a href="pg01sololeveling.html">capitulo 1</a></li>
+          <li class="capitulo">
+            <a href="pg00sololeveling.html">capitulo 0</a>
+          </li>
+          <li class="capitulo">
+            <a href="pg01sololeveling.html">capitulo 1</a>
+          </li>
           <li class="capitulo"><a href="">capitulo 2</a></li>
           <li class="capitulo"><a href="">capitulo 3</a></li>
           <li class="capitulo"><a href="">capitulo 4</a></li>
@@ -150,21 +178,45 @@
     <script src="barranavegacao.js"></script>
     <script src="botaotopo.js"></script>
     <script>
-      const searchInput = document.getElementById('searchInput');
-      const listaItens = document.getElementById('capitulos-list').getElementsByClassName('capitulo');
+      const searchInput = document.getElementById("searchInput");
+      const listaItens = document
+        .getElementById("capitulos-list")
+        .getElementsByClassName("capitulo");
 
-      searchInput.addEventListener('keyup', function(event) {
-          const termo = event.target.value.toLowerCase();
+      searchInput.addEventListener("keyup", function (event) {
+        const termo = event.target.value.toLowerCase();
 
-          for (let i = 0; i < listaItens.length; i++) {
-              const textoItem = listaItens[i].textContent.toLowerCase();
-              if (textoItem.includes(termo)) {
-                  listaItens[i].style.display = 'block';
-              } else {
-                  listaItens[i].style.display = 'none';
-              }
+        for (let i = 0; i < listaItens.length; i++) {
+          const textoItem = listaItens[i].textContent.toLowerCase();
+          if (textoItem.includes(termo)) {
+            listaItens[i].style.display = "block";
+          } else {
+            listaItens[i].style.display = "none";
           }
+        }
       });
-  </script>
+    </script>
+    <script src="iconbookmark.js"></script>
+    <script>
+      // Função para trocar a ordem da lista
+      function trocarOrdem() {
+        var lista = document.getElementById("capitulos-list");
+        var itens = lista.getElementsByTagName("li");
+        var arrayItens = Array.from(itens);
+
+        // Inverte a ordem dos itens
+        arrayItens.reverse();
+
+        // Remove os itens da lista
+        while (lista.firstChild) {
+          lista.removeChild(lista.firstChild);
+        }
+
+        // Adiciona os itens de volta à lista na nova ordem
+        arrayItens.forEach(function (item) {
+          lista.appendChild(item);
+        });
+      }
+    </script>
   </body>
 </html>
