@@ -183,7 +183,7 @@
     --fontexto: "cabecalho";
     --fonth2: 'Poppins', sans-serif;
     --fonth1: 'Rubik Mono One', monospace;
-    --CorSecundaria: #ffca18;
+    --noticia: #ffca18;
     --CorBordaInput: rgba(255, 255, 255, 0.137);  
 
     }
@@ -605,80 +605,7 @@
     hr{
     color: rgba(255, 255, 255, 0.37);
     }
-    .newPost {
-    background-color: var(--corprimaria);
-    width: 80%;
-    margin:  3em auto;
-    border-radius: 10px;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    box-shadow: 1px 0 3px color rgba(0, 0, 0, 0.2);
-    padding: 25px;
-
-    }
-    div.newPost div.infoUser {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-
-    }
-    div.newPost div.infoUser div.imgUser {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background-color: white;
-
-
-    }
-    div.newPost div.infoUser strong {
-    font-size: 16px;
-    color: var(--noticia);
-    margin-left: 10px;
-    }
-    div.newPost form.FormPost {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    }
-    div.newPost form.FormPost textarea {
-    background-color: #fbfbfb;
-    margin: 15px 0;
-    padding: 25px ;
-    border-radius: 10px;
-    resize: none;
-    border: 0;
-    outline: none;
-    font-weight: bold;
-
-    }
-    .btnSubmitComment {
-    background-color: #ffc918cb;
-    padding: 10px 50px;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    outline: none;
-    cursor: pointer;
-    border: 0;
-    border-radius: 10px;
-    text-shadow: black 2px 2px 4px;
-    width: 20%;
-    margin-left: 80%;
-    }
-    .btnSubmitComment:hover {
-    background-color: #ffca18;
-    }
-    ul.Posts li.Post{
-    margin:  15px auto;
-    display: flex;
-    background-color: var(--corprimaria);
-    border-radius: 10px;
-    padding: 25px;
-    width: 80%;
-    flex-direction: column;
-
-    }
+ 
     news {
     width: 80%;
     }
@@ -915,6 +842,92 @@
         display: flex;
         justify-content: center;
     }
+    .ContainerComent {
+        width: 100%;
+
+    }
+    .newPost {
+        background-color: #24365500;
+        width: 100%;
+        margin:  3em auto;
+        border-radius: 10px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        box-shadow: 1px 0 3px color rgba(0, 0, 0, 0.301);
+        padding: 25px;
+    
+        }
+        div.newPost div.infoUser {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    
+        }
+        div.newPost div.infoUser div.imgUser {
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        background-color: #121f36;
+        border: 1px solid rgba(255, 255, 255, 0.137); 
+    
+    
+        }
+        div.newPost div.infoUser strong {
+        font-size: 1.7rem;
+        color: white;
+        margin-left: 10px;
+        }
+        div.newPost form.FormPost {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        }
+        div.newPost form.FormPost textarea {
+        background-color: #121f36;
+        margin: 15px 0;
+        padding: 25px ;
+        border-radius: 10px;
+        resize: none;
+        border: 0;
+        outline: none;
+        font-weight: bold;
+        color: white;
+        border: 1px solid rgba(255, 255, 255, 0.137); 
+        height: 120px;
+        font-size: 1.7rem;
+    
+        }
+        #Usuario {
+            margin: 0;
+            margin-left: 1rem;
+        }
+        .btnSubmitComment {
+        background-color: #ffc918cb;
+        padding: 10px 50px;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        outline: none;
+        cursor: pointer;
+        border: 0;
+        border-radius: 5px;
+        text-shadow: black 2px 2px 4px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        }
+        .btnSubmitComment:hover {
+        background-color: #ffca18;
+        }
+        ul.Posts li.Post{
+        margin:  .5rem auto;
+        display: flex;
+        padding: 25px;
+        width: 80%;
+        flex-direction: column;
+    
+        }
     
   
     @media screen and (max-width: 768px) {
@@ -980,7 +993,7 @@
 
     }
     li {
-    color: rgba(255, 0, 0, 0.63);
+    color: rgb(255, 255, 255);
     font-family: "cabecalho";
     text-decoration: none;
     display: block;
@@ -1208,9 +1221,9 @@
     height: 50%;
     }
     span {
-    font-size: .5rem;
+    font-size: 1rem;
     color: white;
-    left: 0;
+    margin: auto;
     display: flex;
     }
     span > a {
@@ -1521,6 +1534,17 @@
         .abcRioButton {
          margin: auto;
          border-radius: 5px;
+         width: 100%;
+        }
+        .form-group{
+            width: 100%;
+            margin: 2rem auto;
+        }
+        .abcRioButtonContents {
+            font-size: 1.5rem;
+            margin-left: 1rem;
+          
+
         }
         .login-icon {
             width: 50px;
@@ -1553,7 +1577,109 @@
 
 
         }
+        .ContainerComent {
+            width: 100%;
 
+        }
+        .newPost {
+            background-color: #24365500;
+            width: 100%;
+            margin:  3em auto;
+            border-radius: 10px;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            box-shadow: 1px 0 3px color rgba(0, 0, 0, 0.301);
+            padding: 25px;
+        
+            }
+            div.newPost div.infoUser {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        
+        
+            }
+            div.newPost div.infoUser div.imgUser {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background-color: #121f36;
+            border: 1px solid rgba(255, 255, 255, 0.137); 
+        
+        
+            }
+            div.newPost div.infoUser strong {
+            font-size: 1.5rem;
+            color: white;
+            margin-left: 10px;
+            }
+            div.newPost form.FormPost {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            }
+            div.newPost form.FormPost textarea {
+            background-color: #121f36;
+            margin: 15px 0;
+            padding: 25px ;
+            border-radius: 10px;
+            resize: none;
+            border: 0;
+            outline: none;
+            font-weight: bold;
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.137); 
+            height: 120px;
+            font-size: 1.3rem;
+            }
+            #Usuario {
+                margin: 0;
+                margin-left: 1rem;
+            }
+            .btnSubmitComment {
+            background-color: #ffc918cb;
+            padding: 10px 50px;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            outline: none;
+            cursor: pointer;
+            border: 0;
+            border-radius: 5px;
+            text-shadow: black 2px 2px 4px;
+            width: 100%;
+            margin: auto;
+            text-align: center;
+            }
+            .btnSubmitComment:hover {
+            background-color: #ffca18;
+            }
+            ul.Posts li.Post{
+            margin:  .5rem auto;
+            display: flex;
+            padding: 0px;
+            width: 100%;
+            flex-direction: column;
+                
+            }
+            .comment-container{
+               width: 100%;
+                background-color: #fff;
+                margin: auto;
+            }
+            .comment {
+                width: 100%;
+                background-color: #ffffff;
+                font-size: 1.6rem;
+                
+            }
+            .NewComentario {
+                width: 100%;
+                padding: 1rem;
+                margin: auto;
+                background-color: #243655;
+                height: 100vh;
+            }
     }
     .page-link{
     background-color: #ffffff00;

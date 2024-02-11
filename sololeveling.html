@@ -19,6 +19,11 @@
       href="https://cdn-icons-png.flaticon.com/512/3096/3096991.png"
       type="image/x-icon"
     />
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta
+      name="google-signin-client_id"
+      content="YOUR_CLIENT_ID.apps.googleusercontent.com"
+    />
   </head>
   <body>
     <button
@@ -138,8 +143,10 @@
       </p>
 
       <h2 class="separation">Capítulos</h2>
-      <hr/>
-      <button class="OrdemLista" onclick="trocarOrdem()">Trocar Ordem </button>
+      <hr />
+      <div class="OrdenarLista">
+        <button class="OrdemLista" onclick="trocarOrdem()">Trocar Ordem</button>
+      </div>
       <input type="text" id="searchInput" placeholder="Pesquisar Capítulo..." />
       <div class="container-capitulos">
         <ul class="capitulos-list" id="capitulos-list">
@@ -168,6 +175,33 @@
       </div>
       <hr />
       <h2 class="separation">Comentarios</h2>
+      <div class="ContainerComent"></div>
+      <div class="newPost">
+        <div class="infoUser">
+          <div class="imgUser"></div>
+          <strong>Usuario</strong>
+        </div>
+        <form action="" class="FormPost" id="comment-form">
+          <textarea
+            name="textarea"
+            placeholder="Deixe Sua Opiniâo..." id="comment-input"
+          ></textarea>
+          <div class="Icons"></div>
+          <button type="submit" class="btnSubmitComment">Comentar</button>
+        </form>
+        <div class="form-group">
+          <div
+            class="g-signin2"
+            data-onsuccess="onSignIn"
+            data-theme="dark"
+          ></div>
+        </div>
+      </div>
+      <div class="NewComentario" > 
+        <div id="comments-container">
+          
+        
+        </div> </div>
     </main>
 
     <footer>
@@ -177,46 +211,14 @@
     </footer>
     <script src="barranavegacao.js"></script>
     <script src="botaotopo.js"></script>
-    <script>
-      const searchInput = document.getElementById("searchInput");
-      const listaItens = document
-        .getElementById("capitulos-list")
-        .getElementsByClassName("capitulo");
-
-      searchInput.addEventListener("keyup", function (event) {
-        const termo = event.target.value.toLowerCase();
-
-        for (let i = 0; i < listaItens.length; i++) {
-          const textoItem = listaItens[i].textContent.toLowerCase();
-          if (textoItem.includes(termo)) {
-            listaItens[i].style.display = "block";
-          } else {
-            listaItens[i].style.display = "none";
-          }
-        }
-      });
+    <script src="SearchCap.js">
     </script>
     <script src="iconbookmark.js"></script>
-    <script>
-      // Função para trocar a ordem da lista
-      function trocarOrdem() {
-        var lista = document.getElementById("capitulos-list");
-        var itens = lista.getElementsByTagName("li");
-        var arrayItens = Array.from(itens);
-
-        // Inverte a ordem dos itens
-        arrayItens.reverse();
-
-        // Remove os itens da lista
-        while (lista.firstChild) {
-          lista.removeChild(lista.firstChild);
-        }
-
-        // Adiciona os itens de volta à lista na nova ordem
-        arrayItens.forEach(function (item) {
-          lista.appendChild(item);
-        });
-      }
+    <script src="OrdemLista">
+    </script>
+    <script src="GoogleUser.js">
+    </script>
+    <script src="comments.js">
     </script>
   </body>
 </html>
