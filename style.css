@@ -25,10 +25,10 @@
     font-family: "cabecalho";
     }
     span {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: white;
     left: 0;
-    display: flex;
+   display: inline-block;
     }
     span > a {
     color: var(--noticia);
@@ -52,11 +52,10 @@
     font-size: 3.5rem ;
     }
     .container {
-    display: flex;
-    align-items: center;
     height: 100%;
     width: 100%;
     margin-bottom: 2rem;
+    display: flex;
     }
 
     .cont {
@@ -148,6 +147,8 @@
     text-align: center;
     font-family: "cabecalho";
     font-size: 4.5rem ;
+    text-align: center;
+    justify-content: center;
 
 
     }
@@ -189,7 +190,7 @@
     }
     .img {
     max-width: 214px;
-    max-height: 25%;
+    max-height: 100%;
     margin: 0;
     border-radius: 20px;
     padding: 10px;
@@ -928,6 +929,17 @@
         flex-direction: column;
     
         }
+        video {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 5px;
+        }
+        .video-container {
+            max-width: 100%;
+            height: auto;
+          
+          }
     
   
     @media screen and (max-width: 768px) {
@@ -1224,7 +1236,7 @@
     font-size: 1rem;
     color: white;
     margin: auto;
-    display: flex;
+    display: inline-block;
     }
     span > a {
     color:var(--noticia);
@@ -1311,7 +1323,7 @@
     .banner {
     color: white;
     font-weight: bold;   
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     width: 55%;
     position: absolute;
     display: flex;
@@ -1670,7 +1682,7 @@
             .comment {
                 width: 100%;
                 background-color: #ffffff;
-                font-size: 1.6rem;
+                font-size: 1.2rem;
                 
             }
             .NewComentario {
@@ -1680,6 +1692,17 @@
                 background-color: #243655;
                 height: 100vh;
             }
+            video {
+                width: 100%;
+                height: auto;
+                display: block;
+                border-radius: 5px;
+            }
+            .video-container {
+                max-width: 100%;
+                height: auto;
+              
+              }
     }
     .page-link{
     background-color: #ffffff00;
@@ -1751,4 +1774,37 @@
     border: rgba(255, 255, 255, 0.603) solid 1px;
  
 }
+.container-LastCap {
+    width: 100%;
+}
+.LastCap {
+    display: flex;
+    width: 100%;
 
+}
+.imgLastCap {
+    width: 10%;
+    display: flex;
+    float: left;
+    border-radius: 5px;
+
+}
+.infoLastCap {
+    width: 90%;
+    display: flex;
+    color: #ffffff;
+    flex-direction: column;
+}
+.NumberCap {
+    background-color: #ffc918cb;
+    margin: auto;
+ 
+}
+.CapName {
+    color: white;
+    margin: 0 auto;
+    width: 100%;
+    height: 25%;
+    text-align: center;
+   
+}

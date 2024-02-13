@@ -25,10 +25,10 @@ html {
     font-family: "cabecalho";
     }
     span {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: white;
     left: 0;
-    display: flex;
+   display: inline-block;
     }
     span > a {
     color: var(--noticia);
@@ -52,11 +52,10 @@ html {
     font-size: 3.5rem ;
     }
     .container {
-    display: flex;
-    align-items: center;
     height: 100%;
     width: 100%;
     margin-bottom: 2rem;
+    display: flex;
     }
 
     .cont {
@@ -148,6 +147,8 @@ html {
     text-align: center;
     font-family: "cabecalho";
     font-size: 4.5rem ;
+    text-align: center;
+    justify-content: center;
 
 
     }
@@ -184,11 +185,12 @@ html {
     --fonth2: 'Poppins', sans-serif;
     --fonth1: 'Rubik Mono One', monospace;
     --noticia: #ffca18;
+    --CorBordaInput: rgba(255, 255, 255, 0.137);  
 
     }
     .img {
     max-width: 214px;
-    max-height: 25%;
+    max-height: 100%;
     margin: 0;
     border-radius: 20px;
     padding: 10px;
@@ -239,10 +241,10 @@ html {
         background-color: #29364d00;
         border-radius: 5px;
         width: 100%;
-        display: flex;
         cursor: pointer; 
         margin: auto auto 1rem auto ;
         padding: 1px;
+        display: flex;
     
 
     }
@@ -287,7 +289,7 @@ html {
     text-align: center;
     display: block;
     height: 100%;
-    width: 100%;
+    width: 90%;
     font-weight: bold;
 
 
@@ -374,11 +376,9 @@ html {
     margin: auto ;
     }
     section {
-    width: 80%;
+    width: 100%;
     margin: auto;
     }
-
-
     .botaoclose {
     display: none;
     }
@@ -394,22 +394,22 @@ html {
     .textobanner {
     color: var(--colortexto);
     font-weight: bold;
-    font-size: 2rem;
-    width: 65%;
+    font-size: 2.5rem;
+    width: 70%;
     position: absolute;
     justify-content: center;
-    margin-top: 9rem;
+    margin-top: 13rem;
     display: flex;
     padding: 1rem;
     }
     .lermais {
     color: rgba(255, 255, 255, 0.411);
     font-weight: bold;
-    font-size: 15px;
-    width: 80px;
+    font-size: 2rem;
+    width: 120px;
     margin:  15px auto;
     position: absolute;
-    margin:13em auto ;
+    margin:11em auto ;
     margin-left: 15em;
     padding: 5px;
     text-align: center;
@@ -433,8 +433,8 @@ html {
     .banner {
         color: white;
         font-weight: bold;   
-        font-size: 2rem;
-        width: 65%;
+        font-size: 3rem;
+        width: 70%;
         position: absolute;
         display: flex;
         margin-top: 5rem;
@@ -467,9 +467,9 @@ html {
     }
     .carousel-inner{
     background-color: #243655;
-    max-width: 90%;
+    max-width: 100%;
     margin: auto;
-    max-height: 260px;
+    max-height: 320px;
     border-radius: 10px;
     }
 
@@ -548,12 +548,14 @@ html {
 
     }
     .imgLastNews {
-    width:70%;
-    margin: auto;
+        width: 50%;
     }
     .containews {
-    width: 100%;
-    margin: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-column-gap: 15px;
+        margin: 1.5rem auto;
 
     }
 
@@ -602,80 +604,7 @@ html {
     hr{
     color: rgba(255, 255, 255, 0.37);
     }
-    .newPost {
-    background-color: var(--corprimaria);
-    width: 80%;
-    margin:  3em auto;
-    border-radius: 10px;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    box-shadow: 1px 0 3px color rgba(0, 0, 0, 0.2);
-    padding: 25px;
-
-    }
-    div.newPost div.infoUser {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-
-    }
-    div.newPost div.infoUser div.imgUser {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background-color: white;
-
-
-    }
-    div.newPost div.infoUser strong {
-    font-size: 16px;
-    color: var(--noticia);
-    margin-left: 10px;
-    }
-    div.newPost form.FormPost {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    }
-    div.newPost form.FormPost textarea {
-    background-color: #fbfbfb;
-    margin: 15px 0;
-    padding: 25px ;
-    border-radius: 10px;
-    resize: none;
-    border: 0;
-    outline: none;
-    font-weight: bold;
-
-    }
-    .btnSubmitComment {
-    background-color: #ffc918cb;
-    padding: 10px 50px;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    outline: none;
-    cursor: pointer;
-    border: 0;
-    border-radius: 10px;
-    text-shadow: black 2px 2px 4px;
-    width: 20%;
-    margin-left: 80%;
-    }
-    .btnSubmitComment:hover {
-    background-color: #ffca18;
-    }
-    ul.Posts li.Post{
-    margin:  15px auto;
-    display: flex;
-    background-color: var(--corprimaria);
-    border-radius: 10px;
-    padding: 25px;
-    width: 80%;
-    flex-direction: column;
-
-    }
+ 
     news {
     width: 80%;
     }
@@ -876,6 +805,214 @@ html {
         text-align: center;
         display: block;
     }
+    .bookmark-text {
+        font-size: 1rem;
+        margin-top: 4px;
+        text-align: center;
+        display: block;
+      }
+      .favorite-icon {
+        width: 2.5rem; 
+        cursor: pointer;
+        border-radius: 0px;
+        justify-content: center;
+        text-align: center;
+        
+      }
+      .favoritar {
+        display: block;
+        justify-content: center;
+        text-align: center;
+      }
+      .OrdemLista {
+        background-color: #243655;
+        border-radius: 5px;
+        margin: 2rem auto;
+        color: white;
+        font-style: italic;
+        border: 1px solid rgba(255, 255, 255, 0.137); 
+        width: 10rem;
+        height: 5rem;
+        
+
+
+    }
+    .OrdenarLista {
+        display: flex;
+        justify-content: center;
+    }
+    .ContainerComent {
+        width: 100%;
+
+    }
+    .newPost {
+        background-color: #24365500;
+        width: 100%;
+        margin:  3em auto;
+        border-radius: 10px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        box-shadow: 1px 0 3px color rgba(0, 0, 0, 0.301);
+        padding: 25px;
+    
+        }
+        div.newPost div.infoUser {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    
+        }
+        div.newPost div.infoUser div.imgUser {
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        background-color: #121f36;
+        border: 1px solid rgba(255, 255, 255, 0.137); 
+    
+    
+        }
+        div.newPost div.infoUser strong {
+        font-size: 1.7rem;
+        color: white;
+        margin-left: 10px;
+        }
+        div.newPost form.FormPost {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        }
+        div.newPost form.FormPost textarea {
+        background-color: #121f36;
+        margin: 15px 0;
+        padding: 25px ;
+        border-radius: 10px;
+        resize: none;
+        border: 0;
+        outline: none;
+        font-weight: bold;
+        color: white;
+        border: 1px solid rgba(255, 255, 255, 0.137); 
+        height: 120px;
+        font-size: 1.7rem;
+    
+        }
+        #Usuario {
+            margin: 0;
+            margin-left: 1rem;
+        }
+        .btnSubmitComment {
+        background-color: #ffc918cb;
+        padding: 10px 50px;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        outline: none;
+        cursor: pointer;
+        border: 0;
+        border-radius: 5px;
+        text-shadow: black 2px 2px 4px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        }
+        .btnSubmitComment:hover {
+        background-color: #ffca18;
+        }
+        ul.Posts li.Post{
+        margin:  .5rem auto;
+        display: flex;
+        padding: 25px;
+        width: 80%;
+        flex-direction: column;
+    
+        }
+        video {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 5px;
+        }
+        .video-container {
+            max-width: 100%;
+            height: auto;
+          
+          }
+          .Container-CapHome {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .CardHome {
+            padding: .5rem;
+            width: 100%;
+            float: left;
+            display: flex;
+        }
+        .inner {
+            display: flex;
+            background-color: #24365500;
+            border: var(--CorBordaInput) 1px solid ;
+            border-radius: .5rem;
+            flex-grow: 1;
+            width: 100%;
+            height: 13.6rem;          
+        }
+        .poster {
+            flex-shrink: 0;
+            border-radius: 0.3rem;
+            overflow: hidden;
+            display: block;
+            width: 20%;
+        }
+        div.info a {
+            color: white;
+            font-size: 1.6rem;
+            font: bold;
+            text-align: center;
+        }
+        .lastCaps {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0 0 0;
+        }
+        .CardHome .inner .info ul.LastCaps li a  {
+            background: #243655;
+            border-radius: 50rem;
+            display: flex;
+            justify-content: space-between;
+            font-size: .9rem;
+            margin-top: 0.3rem;
+            padding: 0.2rem 0.8rem;
+            color: #747c88;
+            font-weight: 300;
+            overflow: hidden;
+        }
+        .CardHome .inner .info ul.LastCaps li {
+            display: list-item;
+            text-align: -webkit-match-parent;
+            padding: .5rem;
+        }
+        .CardHome .inner .info ul.LastCaps li span {
+            font-size: 1rem;
+            color: #747c88;
+            
+        }
+        .data-publicacao {
+            display: none;
+        }
+        .tempo-passado {
+            font-size: 1rem;
+            color: #747c88;
+            margin: auto;
+        }
+        .CardHome .inner .info ul.LastCaps li:hover {
+            background-color: #00000000;
+          
+        }
+        .CardHome .inner .info ul.LastCaps li a:hover {
+            border: var(--CorBordaInput) 1px solid ;
+        }
   
     @media screen and (max-width: 768px) {
     .navlist{
@@ -940,7 +1077,7 @@ html {
 
     }
     li {
-    color: rgba(255, 0, 0, 0.63);
+    color: rgb(255, 255, 255);
     font-family: "cabecalho";
     text-decoration: none;
     display: block;
@@ -1168,10 +1305,10 @@ html {
     height: 50%;
     }
     span {
-    font-size: .5rem;
+    font-size: 1rem;
     color: white;
-    left: 0;
-    display: flex;
+    margin: auto;
+    display: inline-block;
     }
     span > a {
     color:var(--noticia);
@@ -1239,7 +1376,7 @@ html {
     opacity: 0.8;
     width:  100%;
     display: flex;
-    position: relative;
+   
     margin:  auto;
     border-radius: 0px 5px 5px 0px;
 
@@ -1251,9 +1388,6 @@ html {
     width: 40%;
     float: right;
     display: flex;
-    right: -100px;
-
-
     }
 
 
@@ -1261,7 +1395,7 @@ html {
     .banner {
     color: white;
     font-weight: bold;   
-    font-size: 1rem;
+    font-size: 1.3rem;
     width: 55%;
     position: absolute;
     display: flex;
@@ -1274,11 +1408,11 @@ html {
     .textobanner {
     color: var(--colortexto);
     font-weight: bold;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     width: 55%;
     margin-left: .5em;
     position: absolute;
-    margin-top: 6rem;
+    margin-top: 8rem;
     padding: 0px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)
     }
@@ -1287,7 +1421,7 @@ html {
     font-weight: bold;
     font-size: 0.8rem;
     width: 20%;
-    margin:  10rem auto;
+    margin:  13rem auto;
     margin-left: -50px;
     position: absolute;
     text-align: center;
@@ -1296,7 +1430,7 @@ html {
     .carousel-inner{
     background-color: #24365500;
     width: 100%;
-    height: 160px;
+    height: 180px;
     border-radius: 10px;
     }
     .CategoriaBanner{
@@ -1484,6 +1618,17 @@ html {
         .abcRioButton {
          margin: auto;
          border-radius: 5px;
+         width: 100%;
+        }
+        .form-group{
+            width: 100%;
+            margin: 2rem auto;
+        }
+        .abcRioButtonContents {
+            font-size: 1.5rem;
+            margin-left: 1rem;
+          
+
         }
         .login-icon {
             width: 50px;
@@ -1491,7 +1636,221 @@ html {
             text-align: center;
             display: block;
         }
+          .bookmark-text {
+            font-size: 1rem;
+            margin-top: 4px;
+            text-align: center;
+            display: block;
+          }
+          .favorite-icon {
+            width: 1.5rem; 
+            height: 1.5rem; 
+            cursor: pointer;
+            border-radius: 0px;
+          }
+        .OrdemLista {
+            background-color: #243655;
+            border-radius: 5px;
+            margin: 2rem auto;
+            color: white;
+            font-style: italic;
+            border: 1px solid rgba(255, 255, 255, 0.137); 
+            width: 50%;
+            height: 3rem;
 
+
+
+        }
+        .ContainerComent {
+            width: 100%;
+
+        }
+        .newPost {
+            background-color: #24365500;
+            width: 100%;
+            margin:  3em auto;
+            border-radius: 10px;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            box-shadow: 1px 0 3px color rgba(0, 0, 0, 0.301);
+            padding: 25px;
+        
+            }
+            div.newPost div.infoUser {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        
+        
+            }
+            div.newPost div.infoUser div.imgUser {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background-color: #121f36;
+            border: 1px solid rgba(255, 255, 255, 0.137); 
+        
+        
+            }
+            div.newPost div.infoUser strong {
+            font-size: 1.5rem;
+            color: white;
+            margin-left: 10px;
+            }
+            div.newPost form.FormPost {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            }
+            div.newPost form.FormPost textarea {
+            background-color: #121f36;
+            margin: 15px 0;
+            padding: 25px ;
+            border-radius: 10px;
+            resize: none;
+            border: 0;
+            outline: none;
+            font-weight: bold;
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.137); 
+            height: 120px;
+            font-size: 1.3rem;
+            }
+            #Usuario {
+                margin: 0;
+                margin-left: 1rem;
+            }
+            .btnSubmitComment {
+            background-color: #ffc918cb;
+            padding: 10px 50px;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            outline: none;
+            cursor: pointer;
+            border: 0;
+            border-radius: 5px;
+            text-shadow: black 2px 2px 4px;
+            width: 100%;
+            margin: auto;
+            text-align: center;
+            }
+            .btnSubmitComment:hover {
+            background-color: #ffca18;
+            }
+            ul.Posts li.Post{
+            margin:  .5rem auto;
+            display: flex;
+            padding: 0px;
+            width: 100%;
+            flex-direction: column;
+                
+            }
+            .comment-container{
+               width: 100%;
+                background-color: #fff;
+                margin: auto;
+            }
+            .comment {
+                width: 100%;
+                background-color: #ffffff;
+                font-size: 1.2rem;
+                
+            }
+            .NewComentario {
+                width: 100%;
+                padding: 1rem;
+                margin: auto;
+                background-color: #243655;
+                height: 100vh;
+            }
+            video {
+                width: 100%;
+                height: auto;
+                display: block;
+                border-radius: 5px;
+            }
+            .video-container {
+                max-width: 100%;
+                height: auto;
+              
+              }
+              .CardHome {
+                padding: .5rem;
+                width: 100%;
+                float: left;
+                display: flex;
+            }
+            .inner {
+                display: flex;
+                background-color: #24365500;
+                border: var(--CorBordaInput) 1px solid ;
+                border-radius: .5rem;
+                flex-grow: 1;
+                width: 100%;
+                height: 13.6rem;          
+            }
+            .poster {
+                flex-shrink: 0;
+                border-radius: 0.3rem;
+                overflow: hidden;
+                display: block;
+                width: 23%;
+               margin: auto;
+            }
+            div.info a {
+                color: white;
+                font-size: 1.6rem;
+                font: bold;
+                text-align: center;
+                border-radius: 0px;
+
+            }
+            .lastCaps {
+                list-style: none;
+                padding: 0;
+                margin: 1rem 0 0 0;
+            }
+            .CardHome .inner .info ul.LastCaps li a  {
+                background: #243655;
+                border-radius: 50rem;
+                display: flex;
+                justify-content: space-between;
+                font-size: .9rem;
+                margin-top: 0.3rem;
+                padding: 0.2rem 0.8rem;
+                color: #747c88;
+                font-weight: 300;
+                overflow: hidden;
+            }
+            .CardHome .inner .info ul.LastCaps li {
+                display: list-item;
+                text-align: -webkit-match-parent;
+                padding: .5rem;
+            }
+            .CardHome .inner .info ul.LastCaps li span {
+                font-size: 1rem;
+                color: #747c88;
+                margin: 0 0 0 1rem ;
+                
+            }
+            .Container-CapHome {
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr ;
+            }
+
+            .CardHome .inner img {
+                border-radius: 0px;}
+            .data-publicacao {
+                display: none;
+            }
+            .tempo-passado {
+                font-size: 1rem;
+                color: #747c88;
+                margin: auto;
+            }
+            
     }
     .page-link{
     background-color: #ffffff00;
@@ -1552,4 +1911,18 @@ html {
     .image-Manga {
     width: 100%;
     }
+.perfil {
+    background-color: #121f36;
+    padding: 0px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    margin: auto;
+    padding: 1rem;
+    border: rgba(255, 255, 255, 0.603) solid 1px;
+ 
+}
+.container-LastCap {
+    width: 100%;
+}
 
